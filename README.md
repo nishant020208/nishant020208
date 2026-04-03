@@ -1,15 +1,232 @@
-# 💫 About Me:
-🔭 I’m currently working on codeclub-pro, nishant-shah-portfolio , svit-attend-hub , skillvfy , grameen-sch<br>🌱 I’m currently learning phyton, java , react<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishant | Terminal Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-## 🌐 Socials:
-[![Bluesky](https://img.shields.io/badge/bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=%23FFFFFF)](https://bsky.app/profile/nishant020208.bsky.social) [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/M35DduRg5) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/nishant_02.2008) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/ nishant-shah-6011893a5) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@NISHANT SHAH) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nishant020208@gmail.com) 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Source Code Pro', monospace;
+}
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Adobe Lightroom](https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Jasmine](https://img.shields.io/badge/-Jasmine-%238A4182?style=for-the-badge&logo=Jasmine&logoColor=white) ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=for-the-badge&logo=Meta&logoColor=white) ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+body{
+  background: radial-gradient(circle at top, #0d1117, #02040a);
+  color:#00f7ff;
+  overflow-x:hidden;
+}
 
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:15px;
+  z-index:1000;
+}
 
----
-[![](https://visitcount.itsvg.in/api?id=nishant020208&icon=2&color=5)](https://visitcount.itsvg.in)
+nav a{
+  color:#00f7ff;
+  text-decoration:none;
+  transition:0.3s;
+}
+nav a:hover{color:#00ff9c}
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.glow{
+  font-size:2.5rem;
+  text-shadow:0 0 10px #00f7ff, 0 0 40px #00f7ff;
+}
+
+/* typing */
+.typing{
+  border-right:2px solid #00f7ff;
+  white-space:nowrap;
+  overflow:hidden;
+  animation: typing 4s steps(30), blink .5s infinite alternate;
+}
+@keyframes typing{
+  from{width:0}
+  to{width:100%}
+}
+@keyframes blink{
+  50%{border-color:transparent}
+}
+
+/* cards */
+.container{
+  padding:80px 10%;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(0,255,255,0.2);
+  padding:20px;
+  border-radius:20px;
+  backdrop-filter: blur(15px);
+  margin:20px 0;
+  transition:0.3s;
+}
+.card:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 20px #00f7ff;
+}
+
+/* grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* terminal */
+.terminal{
+  background:#000;
+  padding:20px;
+  border-radius:10px;
+  color:#00ff9c;
+  height:200px;
+  overflow:auto;
+}
+
+/* button */
+button{
+  padding:10px 20px;
+  border:none;
+  background:#00f7ff;
+  color:#000;
+  cursor:pointer;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+/* footer */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#terminal">Terminal</a>
+</nav>
+
+<section class="hero">
+<h1 class="glow typing">> Initializing Nishant...</h1>
+<p>Developer | Builder | No Excuses</p>
+</section>
+
+<section class="container" id="about">
+<h2>About</h2>
+<div class="card">
+<pre>
+> whoami
+Nishant
+
+> focus
+Web Dev | Blockchain | ERP
+
+> quote
+"you can sleep when you are dead"
+</pre>
+</div>
+</section>
+
+<section class="container" id="projects">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>SVIT ERP</h3>
+<p>Full campus management system</p>
+</div>
+
+<div class="card">
+<h3>Vardant</h3>
+<p>Shopkeeper + voting system</p>
+</div>
+
+<div class="card">
+<h3>Blockchain App</h3>
+<p>Learning platform</p>
+</div>
+
+<div class="card">
+<h3>Terminal UI</h3>
+<p>Hacker-style portfolio</p>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="terminal">
+<h2>Terminal</h2>
+
+<div class="terminal" id="output">
+> type "help"
+</div>
+
+<input type="text" id="cmd" placeholder="Enter command..." style="width:100%;padding:10px;background:black;color:#00ff9c;border:none;">
+<button onclick="run()">Run</button>
+
+</section>
+
+<footer>
+© 2026 Nishant | Built like a machine
+</footer>
+
+<script>
+function run(){
+  let input = document.getElementById("cmd").value;
+  let out = document.getElementById("output");
+
+  let response = "";
+
+  if(input=="help"){
+    response = "commands: about, skills, projects";
+  }
+  else if(input=="about"){
+    response = "Nishant | Developer";
+  }
+  else if(input=="skills"){
+    response = "HTML CSS JS Bootstrap";
+  }
+  else if(input=="projects"){
+    response = "ERP | Vardant | Blockchain";
+  }
+  else{
+    response = "command not found";
+  }
+
+  out.innerHTML += "<br>> " + input + "<br>" + response;
+}
+</script>
+
+</body>
+</html>
