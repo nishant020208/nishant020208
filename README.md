@@ -79,16 +79,3 @@ SYSTEM RUNNING AT MAX CAPACITY
 ╚══════════════════════════════╝
 🌐 CONNECT
 <p align="center"> <a href="https://github.com/nishant020208"> <img src="https://img.shields.io/badge/GITHUB-ACCESS-00f7ff?style=for-the-badge&logo=github"/> </a> </p>
-⚠️ DEPLOY
-1. create repo named: nishant020208
-2. paste this as README.md
-3. push to github
-4. done
-💀 FINAL TRUTH
-A fancy README won’t save you.
-
-If your repos are empty,
-this just screams "trying too hard".
-
-Build real stuff.
-Then this actually looks dangerous.
