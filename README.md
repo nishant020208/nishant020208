@@ -70,7 +70,7 @@ Node.js     ██████░░░░ 60%
 SYSTEM RUNNING AT MAX CAPACITY
 📊 DASHBOARD STYLE BLOCK
 ╔══════════════════════════════╗
-║   SYSTEM PERFORMANCE        ║
+║   SYSTEM PERFORMANCE         |
 ╠══════════════════════════════╣
 ║ CPU     ▓▓▓▓▓▓▓▓▓░ 90%       ║
 ║ MEMORY  ▓▓▓▓▓▓▓▓░░ 80%       ║
