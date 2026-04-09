@@ -78,6 +78,7 @@ Sleep Hours:           IRRELEVANT
 SYSTEM RUNNING AT MAX CAPACITY
 <br>
 📊 DASHBOARD BLOCK
+<br>
 ╔══════════════════════════════╗
 ║   SYSTEM PERFORMANCE        ║
 ╠══════════════════════════════╣
@@ -89,9 +90,4 @@ SYSTEM RUNNING AT MAX CAPACITY
 <br>
 🌐 CONNECT
 <p align="center"> <a href="https://github.com/nishant020208"> <img src="https://img.shields.io/badge/GITHUB-ACCESS-00f7ff?style=for-the-badge&logo=github"/> </a> </p> <br>
-⚠️ DEPLOY
-1. create repo: nishant020208
-2. add this as README.md
-3. push
-4. done
-<br>
+
