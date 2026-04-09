@@ -43,14 +43,25 @@
 > hacker-style interface
 > interactive navigation
 <br>
-📊 GITHUB ANALYTICS
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=tokyonight"/> <br><br> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=tokyonight"/> </p> <br>
+## 📊 GitHub Analytics
+
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=1800" height="180"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" height="180"/>
+
+</p>
 📈 CONTRIBUTION GRAPH
 <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=tokyo-night&area=true"/> </p> <br>
 🔥 STREAK STATS
-<p align="center"> <img src="https://streak-stats.demolab.com/?user=nishant020208&theme=tokyonight"/> </p> <br>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=nishant020208&theme=tokyonight&hide_border=true"/>
+</p>
 🏆 ACHIEVEMENTS
-<p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=matrix&margin-w=10&margin-h=10"/> </p> <br>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=matrix&no-frame=true&margin-w=10"/>
+</p>
 📊 CURRENT STACK STATUS
 HTML        ██████████ 100%
 CSS         █████████░ 90%
@@ -77,17 +88,7 @@ Sleep Hours:           IRRELEVANT
 > RESULT:
 SYSTEM RUNNING AT MAX CAPACITY
 <br>
-📊 DASHBOARD BLOCK
-<br>
-╔══════════════════════════════╗
-║   SYSTEM PERFORMANCE        ║
-╠══════════════════════════════╣
-║ CPU     ▓▓▓▓▓▓▓▓▓░ 90%       ║
-║ MEMORY  ▓▓▓▓▓▓▓▓░░ 80%       ║
-║ FOCUS   ▓▓▓▓▓▓▓▓▓▓ 100%      ║
-║ ENERGY  ▓▓▓▓▓▓░░░░ 60%       ║
-╚══════════════════════════════╝
-<br>
+
 ## 🌐 Connect
 
 <p align="center">
