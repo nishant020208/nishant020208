@@ -88,6 +88,21 @@ SYSTEM RUNNING AT MAX CAPACITY
 ║ ENERGY  ▓▓▓▓▓▓░░░░ 60%       ║
 ╚══════════════════════════════╝
 <br>
-🌐 CONNECT
-<p align="center"> <a href="https://github.com/nishant020208"> <img src="https://img.shields.io/badge/GITHUB-ACCESS-00f7ff?style=for-the-badge&logo=github"/> </a> </p> <br>
+## 🌐 Connect
+
+<p align="center">
+
+<a href="https://github.com/nishant020208">
+  <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="mailto:your@email.com">
+  <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="#">
+  <img src="https://img.shields.io/badge/LinkedIn-Coming_Soon-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
+
+</p>
 
