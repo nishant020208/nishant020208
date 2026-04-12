@@ -1,8 +1,6 @@
 🚀 NISHANT SYSTEM CORE
 <p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=35&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=>+BOOTING+SYSTEM...;>+LOADING+MODULES...;>+INITIALIZING+CORE...;>+ACCESS+GRANTED+✔" /> </p> <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 🧠 ABOUT ME
 > USER: nishant020208
 > ROLE: FULL STACK DEV + SYSTEM BUILDER
@@ -10,8 +8,10 @@
 > STATUS: BUILDING NONSTOP
 > QUOTE: "YOU CAN SLEEP WHEN YOU ARE DEAD"
 <br>
+## 🧬 Identity Card
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,100:000000&height=120&section=header&text=NISHANT%20%7C%20SYSTEM%20BUILDER&fontSize=25&fontColor=ffffff"/>
 </p>
 ⚡ WHAT I’M UP TO
 [✔] Building next-gen ERP system
@@ -20,9 +20,7 @@
 [✔] Working on hackathon-level ideas
 [✔] Improving backend architecture
 <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 🧰 TECH ARSENAL
 🔤 Programming Languages
 <p align="center"> <img src="https://skillicons.dev/icons?i=js,html,css&theme=dark"/> </p> <br>
@@ -30,9 +28,7 @@
 <p align="center"> <img src="https://skillicons.dev/icons?i=bootstrap,react,nodejs&theme=dark"/> </p> <br>
 🛠️ Tools & Platforms
 <p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark"/> </p> <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 📂 FEATURED PROJECTS
 🏫 SVIT ERP SYSTEM
 > full campus automation
@@ -55,9 +51,7 @@
 > hacker-style interface
 > interactive navigation
 <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 ## 📊 GitHub Analytics
 
 <p align="center">
@@ -67,9 +61,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" height="180"/>
 
 </p>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 📈 CONTRIBUTION GRAPH
 <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=tokyo-night&area=true"/> </p> <br>
 <p align="center">
@@ -79,9 +71,7 @@
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=nishant020208&theme=tokyonight&hide_border=true"/>
 </p>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 
 📊 CURRENT STACK STATUS
 HTML        ██████████ 100%
@@ -91,9 +81,7 @@ Bootstrap   █████████░ 90%
 React       ██████░░░░ 60%
 Node.js     ██████░░░░ 60%
 <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 🧪 SYSTEM METRICS
 Projects Built:        10+
 Active Ideas:          20+
@@ -101,9 +89,7 @@ Hackathons Planned:    MANY
 Bugs Fixed:            COUNTLESS
 Sleep Hours:           IRRELEVANT
 <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 🧠 EXECUTION ENGINE
 > run nishant.exe
 
@@ -115,9 +101,7 @@ Sleep Hours:           IRRELEVANT
 > RESULT:
 SYSTEM RUNNING AT MAX CAPACITY
 <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
+
 
 ## 🌐 Connect
 
