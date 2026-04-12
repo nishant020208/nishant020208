@@ -61,7 +61,7 @@
 ## 🏆 Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=algolia&no-frame=true&margin-w=15&margin-h=15"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=nishant020208"/>
 </p>
 📊 CURRENT STACK STATUS
 HTML        ██████████ 100%
@@ -71,6 +71,7 @@ Bootstrap   █████████░ 90%
 React       ██████░░░░ 60%
 Node.js     ██████░░░░ 60%
 <br>
+
 🧪 SYSTEM METRICS
 Projects Built:        10+
 Active Ideas:          20+
