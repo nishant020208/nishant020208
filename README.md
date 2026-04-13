@@ -20,6 +20,22 @@
   - 💬 **Ask me about**: Python, TypeScript, Docker, and how to build "unbreakable" systems.
 </p>
 
+---
+
+### 🏛️ Engineering Philosophy
+
+> "Simplicity is the prerequisite for reliability." — *Designing systems that fail gracefully, scale horizontally, and remain maintainable is my primary directive. I believe in code that acts as a blueprint for the future, not just a solution for today.*
+
+---
+
+### 📜 Professional Milestones
+
+- 🌟 **2024**: Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on META.
+- 🏢 **2023**: Scaled **SVIT ERP** to handle 10k+ concurrent users with zero downtime deployments.
+- 💎 **2022**: Implemented a **Transparent Reputation Algoritm** for decentralized commerce (Vardant).
+- ⛓️ **2021**: Transitioned into **Full-Stack Architecture**, mastering the bridge between UI and System Design.
+
+
 <br clear="right" />
 
 <p align="center">
