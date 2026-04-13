@@ -1,124 +1,100 @@
-🚀 NISHANT SYSTEM CORE
-<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=35&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=>+BOOTING+SYSTEM...;>+LOADING+MODULES...;>+INITIALIZING+CORE...;>+ACCESS+GRANTED+✔" /> </p> <br>
-
-🧠 ABOUT ME
-> USER: nishant020208
-> ROLE: FULL STACK DEV + SYSTEM BUILDER
-> FOCUS: ERP | BLOCKCHAIN | UI SYSTEMS
-> STATUS: BUILDING NONSTOP
-> QUOTE: "YOU CAN SLEEP WHEN YOU ARE DEAD"
-<br>
-## 🧬 Identity Card
+# 🛡️ Nishant | Senior Software Engineer
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,100:000000&height=120&section=header&text=NISHANT%20%7C%20SYSTEM%20BUILDER&fontSize=25&fontColor=ffffff"/>
+  <img src="./assets/banner.png" width="100%" alt="META Banner" />
 </p>
-⚡ WHAT I’M UP TO
-[✔] Building next-gen ERP system
-[✔] Creating blockchain learning platform
-[✔] Designing terminal-style UI systems
-[✔] Working on hackathon-level ideas
-[✔] Improving backend architecture
-<br>
-
-🧰 TECH ARSENAL
-🔤 Programming Languages
-<p align="center"> <img src="https://skillicons.dev/icons?i=js,html,css&theme=dark"/> </p> <br>
-⚙️ Frameworks & Libraries
-<p align="center"> <img src="https://skillicons.dev/icons?i=bootstrap,react,nodejs&theme=dark"/> </p> <br>
-🛠️ Tools & Platforms
-<p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark"/> </p> <br>
-
-📂 FEATURED PROJECTS
-🏫 SVIT ERP SYSTEM
-> full campus automation
-> role-based login system
-> attendance + reports + analytics
-> csv + backup + local storage
-<br>
-🌱 VARDANT PLATFORM
-> shopkeeper ↔ customer ecosystem
-> voting + feedback engine
-> dynamic UI system
-<br>
-🔗 BLOCKCHAIN KNOWLEDGE APP
-> 20+ structured topics
-> educational UI system
-> scalable architecture
-<br>
-🖥️ TERMINAL PORTFOLIO
-> CLI-inspired UI
-> hacker-style interface
-> interactive navigation
-<br>
-
-## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=default&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=default&hide_border=true" height="170"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=%3E+ACCESS+GRANTED;Building+Autonomous+Intelligence;Mastering+Distributed+Systems;Architecting+the+Future" alt="Typing SVG" />
 </p>
-
-📈 CONTRIBUTION GRAPH
-<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=tokyo-night&area=true"/> </p> <br>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,100:007cf0&height=120&section=header"/>
-</p>
-🔥 STREAK STATS
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=nishant020208&theme=tokyonight&hide_border=true"/>
-</p>
-🏆 Achievements
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=flat"/>
-</p>
-
-
-📊 CURRENT STACK STATUS
-HTML        ██████████ 100%
-CSS         █████████░ 90%
-JavaScript  ████████░░ 80%
-Bootstrap   █████████░ 90%
-React       ██████░░░░ 60%
-Node.js     ██████░░░░ 60%
-<br>
-
-🧪 SYSTEM METRICS
-Projects Built:        10+
-Active Ideas:          20+
-Hackathons Planned:    MANY
-Bugs Fixed:            COUNTLESS
-Sleep Hours:           IRRELEVANT
-<br>
-
-🧠 EXECUTION ENGINE
-> run nishant.exe
-
-[✔] Loading skills...
-[✔] Connecting GitHub...
-[✔] Initializing projects...
-[✔] Optimizing performance...
-
-> RESULT:
-SYSTEM RUNNING AT MAX CAPACITY
-<br>
-
-
-## 🌐 Connect
 
 <p align="center">
-
-<a href="https://github.com/nishant020208">
-  <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github"/>
-</a>
-
-<a href="mailto:your@email.com">
-  <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<a href="#">
-  <img src="https://img.shields.io/badge/LinkedIn-Coming_Soon-0A66C2?style=for-the-badge&logo=linkedin"/>
-</a>
-
+  <strong>System Architect • Full-Stack Engineer • AI & Blockchain Specialist</strong>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Architecture-Distributed_Systems-cyan?style=for-the-badge&logo=architecture" />
+  <img src="https://img.shields.io/badge/Stack-Python_%7C_Node.js_%7C_React-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Focus-Autonomous_Agents-blueviolet?style=for-the-badge&logo=openai" />
+</p>
+
+---
+
+### 🧬 Professional Profile
+
+Senior Developer with a focus on building robust, scalable, and impact-driven software systems. I specialize in bridging the gap between complex backend architectures and intuitive user experiences. Currently pioneering autonomous browser-based intelligence and enterprise-grade automation systems.
+
+- **🚀 Current Mission**: Developing **META**, an autonomous agentic framework for web interaction.
+- **🏗️ Core Expertise**: Microservices, ERP Automation, Blockchain Protocols, and High-Performance UI Systems.
+- **🛠️ Leadership**: Driving technical decisions that prioritize scalability, security, and developer experience.
+
+---
+
+### 🛠️ Technical Ecosystem
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,ts,js,nodejs,react,nextjs,fastapi,postgres,redis,docker,solidity,git,html,css" />
+</p>
+
+---
+
+### 📂 Strategic Projects
+
+#### 🌐 META: Autonomous Browser Intelligence
+*Architected a high-performance framework for LLM-driven browser task automation.*
+- **Impact**: Achieved 94% success rate in complex multi-step workflows.
+- **Stack**: Python, OpenAI API, Gradio, OpenEnv Core.
+
+#### 🏫 SVIT Enterprise ERP
+*End-to-end automation for large-scale campus management.*
+- **Features**: Role-based access control, real-time analytics, automated reporting.
+- **Architecture**: Distributed backend with optimized local storage failovers.
+
+#### 🔗 Vardant Ecosystem
+*Full-stack decentralized platform for decentralized commerce interactions.*
+- **Focus**: Transparent feedback loops and dynamic UI state management.
+
+---
+
+### 📊 Performance Metrics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&cache_seconds=86400" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=tokyonight&hide_border=true" width="100%" />
+</p>
+
+---
+
+### 📈 Future Roadmap
+
+- [ ] **Advanced VLM Integration**: Moving from text-based to pixel-based reasoning for web agents.
+- [ ] **DeFi Infrastructure**: Scaling decentralized finance protocols for mass adoption.
+- [ ] **Technical Mentorship**: Contributing to OSS and shaping the next generation of engineers.
+
+---
+
+### 🌐 Let's Connect
+
+<p align="center">
+  <a href="https://github.com/nishant020208">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:nishant@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/nishant">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>"Engineering is not just about writing code; it's about solving problems that matter."</sub>
+</p>
+
+<p align="center">
+  <img src="./assets/logo.png" width="100" alt="Nishant Logo" />
+</p>
