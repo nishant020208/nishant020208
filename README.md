@@ -47,8 +47,8 @@
 ### 📊 Vital Signs & System Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" height="195" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&cache_seconds=86400" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
 </p>
 
 <p align="center">
@@ -64,7 +64,11 @@
 ### 🎮 Contribution Heatmap (Snake Edition)
 
 <p align="center">
-  <img src="https://github.com/nishant020208/nishant020208/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake.svg" width="100%">
+  </picture>
 </p>
 
 > [!NOTE]
@@ -75,7 +79,9 @@
 ### 🏆 Professional Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=darkhub&no-bg=true&margin-w=4&rank=SSS,SS,S,AAA,AA,A" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=radical&no-bg=false&margin-w=4" alt="GitHub Trophies" />
+  </a>
 </p>
 
 ---
