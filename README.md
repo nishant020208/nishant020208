@@ -47,7 +47,7 @@
 ### 📊 Vital Signs & System Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
 </p>
 
@@ -56,7 +56,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FFFFFF&area=true&hide_border=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
 </p>
 
 ---
@@ -79,8 +79,8 @@
 ### 🏆 Professional Trophies
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=nishant020208&theme=radical&no-bg=false&margin-w=4" alt="GitHub Trophies" />
+  <a href="https://github.com/nishant020208">
+    <img src="https://github-trophies.vercel.app/?username=nishant020208&theme=radical&margin-w=4" alt="GitHub Trophies" />
   </a>
 </p>
 
