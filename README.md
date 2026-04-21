@@ -6,134 +6,133 @@
   <img src="https://img.shields.io/github/stars/nishant020208?label=TOTAL+STARS&style=for-the-badge&color=ffca28" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/MISSION--STATUS-ACTIVE-success?style=for-the-badge&logo=opsgenie&logoColor=white" />
+  <img src="https://img.shields.io/badge/INTEL--SYNC-COMPLETE-blue?style=for-the-badge&logo=cachet&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=500&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=%3E+INITIALIZING+SYSTEM+CORE...;%3E+SCANNING+VECTORS...;%3E+MISSION+ESTABLISHED;Building+Autonomous+Intelligence;Architecting+the+Future+at+Scale" alt="Typing SVG" />
+</p>
+
 ---
 
 <p align="left">
   <img src="./assets/logo_v2.png" width="180" align="right" />
-  <h2>👋 Hello World, I'm Nishant!</h2>
+  <h2>⚡ SYSTEM STATUS: ONLINE</h2>
   
-  I'm a **Senior Software Engineer** and **System Architect** passionate about building autonomous systems and scalable backend infrastructures. My work focuses on the intersection of **AI Agents**, **High-Performance Microservices**, and **Decentralized Technologies**.
+  I'm a **Senior Software Engineer** and **System Architect** specializing in **Autonomous Agent Intelligence** and **Distributed High-Availability Systems**. My mission is to build "unbreakable" infrastructures that autonomously navigate and optimize the digital landscape.
   
-  - 🔭 **Exploring**: VLM (Vision-Language Models) for autonomous web navigation.
-  - 🚀 **Building**: [META](https://github.com/nishant020208/META) - The next generation of browser intelligence.
-  - 🏗️ **Architecting**: Distributed ERP systems and blockchain-based feedback loops.
-  - 💬 **Ask me about**: Python, TypeScript, Docker, and how to build "unbreakable" systems.
+  - 🔭 **Strategic Focus**: Vision-Language Models (VLM) for autonomous web navigation.
+  - 🚀 **Flagship Project**: [META](https://github.com/nishant020208/META) — High-fidelity browser intelligence.
+  - 🏗️ **Architecture**: Scaling distributed ERPs and trustless reputation protocols.
 </p>
 
 ---
 
-### 🏛️ Engineering Philosophy
+### 🏆 THE HALL OF VICTORIES
 
-> "Simplicity is the prerequisite for reliability." — *Designing systems that fail gracefully, scale horizontally, and remain maintainable is my primary directive. I believe in code that acts as a blueprint for the future, not just a solution for today.*
+<div align="center">
 
----
-
-### 📜 Professional Milestones
-
-- 🌟 **2024**: Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on META.
-- 🏢 **2023**: Scaled **SVIT ERP** to handle 10k+ concurrent users with zero downtime deployments.
-- 💎 **2022**: Implemented a **Transparent Reputation Algoritm** for decentralized commerce (Vardant).
-- ⛓️ **2021**: Transitioned into **Full-Stack Architecture**, mastering the bridge between UI and System Design.
-
-
-<br clear="right" />
+| **Event** | **Rank** | **Mission Intelligence** |
+| :--- | :--- | :--- |
+| **GDG HackFest 2026** | 🥇 **1st Rank** | **1st out of 100+ teams** in a multi-disciplinary in-person engineering sprint. Focused on rapid prototyping and system reliability. |
+| **Professional Milestone** | 🌟 **BETA** | Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on complex web workflows. |
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=%3E+INITIALIZING+CORE+MODULES...;%3E+ACCESS+GRANTED;Building+Autonomous+Intelligence;Mastering+Distributed+Systems;Architecting+the+Future+at+Scale" alt="Typing SVG" />
+  <img src="https://github-trophies.vercel.app/?username=nishant020208&theme=radical&margin-w=4&rank=SSS,SS,S,A" alt="Elite Trophies" />
 </p>
+
+</div>
 
 ---
 
-### 📊 Vital Signs & System Metrics
+### 🏛️ Engineering Philosophy & Core Modules
+
+> "Simplicity is the prerequisite for reliability." — *Designing systems that fail gracefully and scale horizontally at any load.*
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
 </p>
 
-<p align="center">
+<div align="center">
+  <h3>📊 System Activity & Network Load</h3>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishant020208&theme=radical&hide_border=true&count_private=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
+  <br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
-</p>
+</div>
 
 ---
 
-### 🎮 Contribution Heatmap (Snake Edition)
+### 🎮 Contribution Heatmap (3D Visualizer)
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake.svg" width="100%">
-  </picture>
+  <img src="https://github-isometric-contribution-graph.vercel.app/api?username=nishant020208&theme=radical" width="100%" alt="3D Isometric Contribution Graph" />
 </p>
-
-> [!NOTE]
-> The snake above navigates through my contribution history! (To enable this, [check out the instructions](https://github.com/Platane/snk)).
-
----
-
-### 🏆 Professional Trophies
 
 <p align="center">
-  <a href="https://github.com/nishant020208">
-    <img src="https://github-trophies.vercel.app/?username=nishant020208&theme=radical&margin-w=4" alt="GitHub Trophies" />
-  </a>
+  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
 </p>
+
+> [!TIP]
+> This 3D architecture represents my daily commit velocity and system interaction cycles across the ecosystem.
 
 ---
 
-### 🛠️ The Tech Arsenal
+### 🛠️ THE TECH ARSENAL (COMMAND & CONTROL)
 
 <div align="center">
 
-| **Category** | **Technologies** |
-| :--- | :--- |
-| **Languages** | <img src="https://skillicons.dev/icons?i=py,ts,js,solidity,cpp,rust" /> |
-| **Frameworks** | <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,fastapi,express,flask" /> |
-| **Database** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql,sqlite" /> |
-| **DevOps** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions,aws,linux,nginx" /> |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,vscode,postman,figma,babel,jest" /> |
+| **Division** | **Primary Modules** | **Specialization** |
+| :--- | :--- | :--- |
+| **Core Logic** | <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,rust" /> | **Agentic Intelligence** |
+| **Control Plane** | <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,fastapi" /> | **High-Scale UX/UI** |
+| **Data Persistence** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" /> | **Distributed Consensus** |
+| **Infrastructure** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,linux" /> | **Zero-Downtime Deploy** |
 
 </div>
 
 ---
 
-### 📂 Featured Field Operations
+### 📂 FIELD OPERATIONS (MISSION LOG)
 
-| Project | Status | Core Mission |
+| Project | Designation | Objective | Power Level |
+| :--- | :--- | :--- | :--- |
+| **🌐 [META](https://github.com/nishant020208/META)** | `ACTIVE` | High-fidelity autonomous browser agent for multi-step web workflows. | `94% Completion` |
+| **🏫 [SVIT ERP](https://github.com/nishant020208/SVIT_ERP)** | `STABLE` | Campus lifecycle automation with real-time distributed data. | `10k+ Users` |
+| **🔗 [Vardant](https://github.com/nishant020208/Vardant)** | `BETA` | Trustless commerce protocol with transparent reputation logic. | `Protocol V2` |
+
+---
+
+### 📈 MISSION ROADMAP
+
+| Phase | Mission Objective | Status |
 | :--- | :--- | :--- |
-| **🌐 [META](https://github.com/nishant020208/META)** | `ACTIVE` | High-fidelity autonomous browser agent for multi-step web workflows. |
-| **🏫 [SVIT ERP](https://github.com/nishant020208/SVIT_ERP)** | `STABLE` | Complete campus lifecycle automation with real-time distributed data. |
-| **🔗 [Vardant](https://github.com/nishant020208/Vardant)** | `BETA` | Trustless commerce protocol with transparent reputation score logic. |
+| **PHASE 1** | Initial deployment of the META agent core | `COMPLETED` |
+| **PHASE 2** | Successful integration of distributed failovers for SVIT | `COMPLETED` |
+| **PHASE 3** | Vision-based reasoning for browser agents (VLM Logic) | `IN PROGRESS` [■■■■■■■■□□] |
+| **PHASE 4** | Scaling DeFi infrastructure for Vardant mainnet deployment | `SCHEDULED` |
+| **PHASE 5** | Open-sourcing the internal "Agentic Toolbelt" for dev ecosystem | `STAGED` |
 
 ---
 
-### 📈 Mission Roadmap
-
-- [x] **Phase 1**: Initial deployment of the META agent core.
-- [x] **Phase 2**: Successful integration of distributed failovers for SVIT.
-- [/] **Phase 3**: Implementing Vision-based reasoning for browser agents (In Progress).
-- [ ] **Phase 4**: Scaling DeFi infrastructure for Vardant mainnet deployment.
-- [ ] **Phase 5**: Open-sourcing my internal "Agentic Toolbelt" for other devs.
-
----
-
-### 🌌 Let's Create Something Remarkable
+### 🌌 CONNECT TO UPLINK
 
 <p align="center">
-  <a href="https://github.com/nishant020208">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://linkedin.com/in/nishant-shah-6011893a5">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://nishant08-portfolio.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-36BCF7?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
   <a href="mailto:nishant@example.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/nishant020208">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=%3E+INITIALIZING+CORE+MODULES...;%3E+ACCESS+GRANTED;Building+Autonomous+Intelligence;Mastering+Distributed+Systems;Architecting+the+Future+at+Scale" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -143,3 +142,4 @@
 <p align="center">
   <img src="./assets/logo_v2.png" width="80" />
 </p>
+
