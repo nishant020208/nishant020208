@@ -1,5 +1,4 @@
 # <p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" /></p>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nishant020208&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" />
   <img src="https://img.shields.io/github/followers/nishant020208?label=FOLLOWERS&style=for-the-badge&color=28a745" />
