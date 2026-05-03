@@ -51,8 +51,8 @@
 > "Simplicity is the prerequisite for reliability." — *Designing systems that fail gracefully and scale horizontally at any load.*
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
 </p>
 
 <div align="center">
