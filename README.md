@@ -64,10 +64,10 @@
 
 ---
 
-### 🎮 Contribution Heatmap (3D Visualizer)
+### 🎮 Contribution Heatmap & Activity
 
 <p align="center">
-  <img src="https://github-isometric-contribution-graph.vercel.app/api?username=nishant020208&theme=radical" width="100%" alt="3D Isometric Contribution Graph" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Isometric Contribution Graph" />
 </p>
 
 <p align="center">
@@ -76,6 +76,15 @@
 
 > [!TIP]
 > This 3D architecture represents my daily commit velocity and system interaction cycles across the ecosystem.
+
+---
+
+### 💡 CURRENT DIRECTIVES
+
+- 🌱 **Currently calibrating my neural pathways on:** Large Language Model (LLM) fine-tuning, Rust for Systems Programming, and Zero-Knowledge Proofs.
+- 👯 **Seeking active collaborations for:** Autonomous agent architectures and distributed systems.
+- 💬 **Ask me about:** Web workflows, VLM integration, scalable architecture, and why caching is hard.
+- ⚡ **Fun Fact:** My code works best between the hours of 1 AM and 4 AM, fueled primarily by caffeine and lo-fi beats.
 
 ---
 
