@@ -85,14 +85,13 @@ $$
 </div>
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
 </p>
 
 <div align="center">
   <h3>📊 SYSTEM ACTIVITY & NETWORK LOAD</h3>
-  <img src="https://img.shields.io/badge/CURRENT_STREAK-40_DAYS-FF9800?style=for-the-badge&logo=github&logoColor=white&labelColor=141321" alt="Current Streak" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishant020208&theme=radical&hide_border=true&count_private=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=nishant020208&theme=radical&hide_border=true&count_private=true" alt="GitHub Streak" />
   <br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
 </div>
