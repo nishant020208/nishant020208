@@ -80,7 +80,9 @@ $$
 
 ### 🏛️ ENGINEERING PHILOSOPHY & CORE MODULES
 
-> "Design systems that fail gracefully and scale horizontally at any load."
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=F8D847&center=true&vCenter=true&width=800&height=40&lines=%22Design+systems+that+fail+gracefully+and+scale+horizontally+at+any+load.%22" alt="Philosophy" />
+</div>
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true" height="195" />
@@ -89,6 +91,7 @@ $$
 
 <div align="center">
   <h3>📊 SYSTEM ACTIVITY & NETWORK LOAD</h3>
+  <img src="https://img.shields.io/badge/CURRENT_STREAK-40_DAYS-FF9800?style=for-the-badge&logo=github&logoColor=white&labelColor=141321" alt="Current Streak" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishant020208&theme=radical&hide_border=true&count_private=true" alt="GitHub Streak" />
   <br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
