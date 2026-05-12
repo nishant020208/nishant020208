@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" alt="Header" />
 </h1>
 
 <p align="center">
@@ -21,7 +21,7 @@
 ---
 
 <p align="left">
-  <img src="./assets/logo_v2.png" width="180" align="right" />
+  <img src="assets/logo_v2.png" width="180" align="right" />
   <h2>⚡ SYSTEM OVERRIDE: ONLINE</h2>
   
   I'm a **Senior Systems Architect** & **Machine Intelligence Engineer** specializing in **Autonomous Agent Ecosystems**, **Zero-Knowledge Architecture**, and **High-Frequency Distributed Systems**. I don't just write code; I design unbreakable digital organisms that optimize, adapt, and scale autonomously.
@@ -86,14 +86,18 @@ $$
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=F8D847&center=true&vCenter=true&width=800&height=40&lines=%22Design+systems+that+fail+gracefully+and+scale+horizontally+at+any+load.%22" alt="Philosophy" />
 </div>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" />
+</div>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" height="195" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" height="195" />
+  <img src="https://img.shields.io/github/commit-activity/y/nishant020208?label=ANNUAL+LOAD&style=for-the-badge&color=blueviolet" />
 </p>
 
 <div align="center">
   <h3>📊 SYSTEM ACTIVITY & NETWORK LOAD</h3>
-  <img src="https://streak-stats.demolab.com/?user=nishant020208&theme=radical&hide_border=true&count_private=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishant020208&theme=radical&hide_border=true" alt="GitHub Streak" />
   <br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
 </div>
@@ -109,11 +113,11 @@ $$
 ### 🎮 CONTRIBUTION HEATMAP & ACTIVITY
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Isometric Contribution Graph" />
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Isometric Contribution Graph" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
 </p>
 
 > [!TIP]
