@@ -1,4 +1,6 @@
-# <p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" /></p>
+<h1 align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" width="100%" />
+</h1>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nishant020208&color=blueviolet&style=for-the-badge&label=NEURAL+UPLINKS" />
@@ -96,12 +98,18 @@ $$
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
 </div>
 
+> [!IMPORTANT]
+> **To ensure your streak reflects your complete GitHub activity:**
+> 1. Go to your [GitHub Profile](https://github.com/nishant020208)
+> 2. Click on **Contribution Settings** (above the contribution graph)
+> 3. Ensure **"Private contributions"** is checked. This allows the streak tool to count your work across all repositories.
+
 ---
 
 ### 🎮 CONTRIBUTION HEATMAP & ACTIVITY
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Isometric Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Isometric Contribution Graph" />
 </p>
 
 <p align="center">
@@ -182,5 +190,5 @@ $$
 </p>
 
 <p align="center">
-  <img src="./assets/logo_v2.png" width="80" />
+  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/assets/logo_v2.png" width="80" />
 </p>
