@@ -21,7 +21,7 @@
 ---
 
 <p align="left">
-  <img src="assets/logo_v2.png" width="180" align="right" />
+  <img src="assets/premium_logo.png" width="180" align="right" />
   <h2>⚡ SYSTEM OVERRIDE: ONLINE</h2>
   
   I'm a **Senior Systems Architect** & **Machine Intelligence Engineer** specializing in **Autonomous Agent Ecosystems**, **Zero-Knowledge Architecture**, and **High-Frequency Distributed Systems**. I don't just write code; I design unbreakable digital organisms that optimize, adapt, and scale autonomously.
@@ -82,11 +82,14 @@ $$
 
 ### 🏛️ ENGINEERING PHILOSOPHY & CORE MODULES
 
+> [!NOTE]
+> 🔒 **Private Contributions ENABLED** — All stats below count private commits, PRs, and reviews via GitHub's contribution graph settings.
+
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&icon_color=FF6EC7&show=reviews,discussions_started,prs_merged,prs_merged_percentage"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&langs_count=8"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&langs_count=10&count_private=true"/>
 
 </div>
 
@@ -102,9 +105,11 @@ $$
 
 <div align="center">
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nishant020208&theme=radical"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nishant020208&theme=radical"/>
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nishant020208&theme=radical"/>
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nishant020208&theme=radical"/>
+
+<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nishant020208&theme=radical"/>
 
 </div>
 
@@ -112,9 +117,9 @@ $$
 
 <div align="center">
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nishant020208&theme=radical"/>
-
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nishant020208&theme=radical&utcOffset=5.5"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&icon_color=FF6EC7&custom_title=Total+Commits+%28Public+%2B+Private%29&hide=issues&show=prs_merged"/>
 
 </div>
 
@@ -122,9 +127,23 @@ $$
 
 ### 🔥 FULL ACCOUNT STREAK ANALYTICS
 
+> [!IMPORTANT]
+> ✅ **Private contributions are fully counted.** Enabled via `GitHub Settings → Contributions → Include private contributions on my profile`. The streak service reads your full contribution graph — every private commit, PR, and review is reflected below.
+
 <div align="center">
 
-<img width="85%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=900&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7"/>
+<img width="90%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=950&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&sideLabels=36BCF7&dates=AAAAAA&sideNums=FF6EC7&currStreakNum=FFFFFF&background=0D1117&stroke=FF6EC730"/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<!-- Alternate streak card (GitHub native theming) -->
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&stroke=FF6EC730"/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&custom_title=⚡+All-Time+Commit+Power&rank_icon=percentile&icon_color=FF6EC7"/>
 
 </div>
 
@@ -170,10 +189,46 @@ $$
 
 | **Division** | **Primary Modules** | **Specialization** |
 | :--- | :--- | :--- |
-| **Cognitive Core** | <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,rust" /> | **Agentic Intelligence & Low-Level Processing** |
-| **Control Plane** | <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,fastapi" /> | **High-Scale APIs & State Management** |
-| **Data Persistence** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" /> | **Distributed Consensus & Real-Time Sync** |
-| **Infrastructure** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,linux" /> | **Zero-Downtime Deployments & Container Orchestration** |
+| **Cognitive Core** | <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,rust,go" /> | **Agentic Intelligence & Low-Level Processing** |
+| **AI / ML Stack** | <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn" /> | **Deep Learning, Reinforcement Learning & VLMs** |
+| **Control Plane** | <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,fastapi,graphql" /> | **High-Scale APIs & State Management** |
+| **Data Persistence** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,supabase,sqlite" /> | **Distributed Consensus & Real-Time Sync** |
+| **Infrastructure** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,azure,linux" /> | **Zero-Downtime Deployments & Cloud Orchestration** |
+| **Cybersecurity** | <img src="https://skillicons.dev/icons?i=kali,wireshark" /> | **Penetration Testing & Security Hardening** |
+| **DevOps & Tooling** | <img src="https://skillicons.dev/icons?i=git,github,githubactions,vercel,nginx,terraform,ansible" /> | **CI/CD Pipelines & Infrastructure as Code** |
+| **Dev Environment** | <img src="https://skillicons.dev/icons?i=vscode,vim,bash,powershell,linux" /> | **Cognitive Workstation & Terminal Mastery** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+<!-- Compact badge row for quick visual scan -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+<img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" />
 
 </div>
 
@@ -224,5 +279,5 @@ $$
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/assets/logo_v2.png" width="80" />
+  <img src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/assets/premium_logo.png" width="80" />
 </p>
