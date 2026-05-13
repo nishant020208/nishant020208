@@ -128,18 +128,6 @@ $$
 
 </div>
 
-> [!IMPORTANT]
-> To make streaks and analytics count ALL activity:
->
-> 1. Open GitHub Profile  
-> 2. Click contribution graph settings  
-> 3. Enable:
->
-> ✅ Private Contributions  
-> ✅ Include private commits  
->
-> Otherwise GitHub hides most activity from APIs.
-
 ---
 
 ### 📈 CONTRIBUTION GRAPH
