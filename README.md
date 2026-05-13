@@ -83,30 +83,72 @@ $$
 ### 🏛️ ENGINEERING PHILOSOPHY & CORE MODULES
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=F8D847&center=true&vCenter=true&width=800&height=40&lines=%22Design+systems+that+fail+gracefully+and+scale+horizontally+at+any+load.%22" alt="Philosophy" />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&langs_count=8"/>
+
 </div>
 
+<br>
+
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true" />
+
+<img width="85%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nishant020208&theme=radical"/>
+
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/github/commit-activity/y/nishant020208?label=ANNUAL+LOAD&style=for-the-badge&color=blueviolet" />
-</p>
+<br>
 
 <div align="center">
-  <h3>📊 SYSTEM ACTIVITY & NETWORK LOAD</h3>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishant020208&theme=radical&hide_border=true" alt="GitHub Streak" />
-  <br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&theme=radical&hide_border=true&area=true" width="100%" />
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nishant020208&theme=radical"/>
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nishant020208&theme=radical"/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nishant020208&theme=radical"/>
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nishant020208&theme=radical&utcOffset=5.5"/>
+
+</div>
+
+---
+
+### 🔥 FULL ACCOUNT STREAK ANALYTICS
+
+<div align="center">
+
+<img width="85%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=900&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7"/>
+
 </div>
 
 > [!IMPORTANT]
-> **To ensure your streak reflects your complete GitHub activity:**
-> 1. Go to your [GitHub Profile](https://github.com/nishant020208)
-> 2. Click on **Contribution Settings** (above the contribution graph)
-> 3. Ensure **"Private contributions"** is checked. This allows the streak tool to count your work across all repositories.
+> To make streaks and analytics count ALL activity:
+>
+> 1. Open GitHub Profile  
+> 2. Click contribution graph settings  
+> 3. Enable:
+>
+> ✅ Private Contributions  
+> ✅ Include private commits  
+>
+> Otherwise GitHub hides most activity from APIs.
+
+---
+
+### 📈 CONTRIBUTION GRAPH
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=58A6FF&line=F778BA&point=FFFFFF&area=true&hide_border=true"/>
+
+</div>
 
 ---
 
