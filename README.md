@@ -83,15 +83,6 @@ $$
 
 ### 🏛️ ENGINEERING PHILOSOPHY & CORE MODULES
 
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&icon_color=FF6EC7&show=reviews,discussions_started,prs_merged,prs_merged_percentage"/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&layout=compact&theme=radical&hide_border=true&langs_count=10&count_private=true"/>
-
-</div>
-
 <br>
 
 <div align="center">
