@@ -109,8 +109,6 @@ $$
 
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nishant020208&theme=radical&utcOffset=5.5"/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&icon_color=FF6EC7&custom_title=Total+Commits+%28Public+%2B+Private%29&hide=issues&show=prs_merged"/>
-
 </div>
 
 ---
