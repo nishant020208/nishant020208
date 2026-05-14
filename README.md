@@ -128,8 +128,6 @@ $$
 <!-- Secondary Streak & High-Performance Stats (Counting Private) -->
 <img width="49%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&mode=weekly&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=FF6EC7"/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&custom_title=⚡+All-Time+Commit+Power&rank_icon=percentile&icon_color=FF6EC7&show=reviews,discussions_started,prs_merged,prs_merged_percentage"/>
-
 </div>
 
 ---
