@@ -83,8 +83,6 @@ $$
 
 ### 🏛️ ENGINEERING PHILOSOPHY & CORE MODULES
 
-> [!NOTE]
-> 🔒 **Private Contributions ENABLED** — All stats below count private commits, PRs, and reviews via GitHub's contribution graph settings.
 
 <div align="center">
 
