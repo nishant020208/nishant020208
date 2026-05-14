@@ -126,9 +126,6 @@ $$
 
 ### 🔥 FULL ACCOUNT STREAK ANALYTICS
 
-> [!IMPORTANT]
-> ✅ **Private contributions are fully counted.** Enabled via `GitHub Settings → Contributions → Include private contributions on my profile`. The streak service reads your full contribution graph — every private commit, PR, and review is reflected below.
-
 <div align="center">
 
 <img width="90%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=950&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&sideLabels=36BCF7&dates=AAAAAA&sideNums=FF6EC7&currStreakNum=FFFFFF&background=0D1117&stroke=FF6EC730"/>
