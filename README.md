@@ -136,7 +136,7 @@ $$
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=58A6FF&line=F778BA&point=FFFFFF&area=true&hide_border=true"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=58A6FF&line=F778BA&point=FFFFFF&area=true&hide_border=true&custom_steps=5"/>
 
 </div>
 
