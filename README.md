@@ -34,7 +34,7 @@
 
 ---
 
-### 💻 TERMINAL: UPLINK ESTABLISHED
+### 💻 TERMINALs: UPLINK ESTABLISHED
 
 ```shell
 root@nishant-core:~# ./init_sequence.sh
