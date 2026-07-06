@@ -2,17 +2,17 @@ name: Update Streak Stats
 
 on:
   schedule:
-    - cron: "0 3 * * *" # Daily at 03:00 UTC
-  workflow_dispatch:
+    - cron: "0 1 * * *"   # 01:00 UTC daily
+  workflow_dispatch:        # manual trigger
   push:
-    paths:
-      - ".github/workflows/streak-stats.yml"
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -20,72 +20,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create profile directory
-        run: mkdir -p profile
-
-      # ── Main streak card ──────────────────────────────────────────────────
-      - name: Generate main streak stats
-        uses: DenverCoder1/github-readme-streak-stats@main
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          options: >-
-            user=nishant020208
-            &theme=radical
-            &hide_border=true
-            &border_radius=10
-            &card_width=950
-            &ring=FF6EC7
-            &fire=FF6EC7
-            &currStreakLabel=36BCF7
-            &sideLabels=36BCF7
-            &dates=AAAAAA
-            &sideNums=FF6EC7
-            &currStreakNum=FFFFFF
-            &background=0D1117
-            &stroke=FF6EC730
-          path: profile/streak.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
+          python-version: "3.11"
 
-      # Fallback: fetch via curl if the action fails
-      - name: Fallback – fetch main streak via curl
-        if: failure()
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate main streak SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl -fsSL \
-            "https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=950&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&sideLabels=36BCF7&dates=AAAAAA&sideNums=FF6EC7&currStreakNum=FFFFFF&background=0D1117&stroke=FF6EC730" \
-            -o profile/streak.svg \
-            --max-time 30 || echo "Curl fallback also failed; keeping existing file."
+          echo "==> Generating main streak stats..."
+          python .github/scripts/generate_streak.py
 
-      # ── Weekly streak card ────────────────────────────────────────────────
-      - name: Generate weekly streak stats
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          options: >-
-            user=nishant020208
-            &theme=radical
-            &hide_border=true
-            &mode=weekly
-            &background=0D1117
-            &ring=36BCF7
-            &fire=36BCF7
-            &currStreakLabel=FF6EC7
-          path: profile/streak-weekly.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true
-
-      # Fallback: fetch weekly via curl if the action fails
-      - name: Fallback – fetch weekly streak via curl
-        if: failure()
+      - name: Generate weekly streak SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl -fsSL \
-            "https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&mode=weekly&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=FF6EC7" \
-            -o profile/streak-weekly.svg \
-            --max-time 30 || echo "Curl fallback also failed; keeping existing file."
+          echo "==> Generating weekly streak stats..."
+          python .github/scripts/generate_streak_weekly.py
 
-      # ── Commit any updates ────────────────────────────────────────────────
-      - name: Commit streak stats SVGs
+      - name: Commit and push SVGs
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add profile/streak.svg profile/streak-weekly.svg
-          git diff --staged --quiet || git commit -m "chore: update streak stats [skip ci]"
-          git push
+          git diff --staged --quiet \
+            && echo "No changes to commit." \
+            || (git commit -m "chore: update streak stats [skip ci]" && git push)
