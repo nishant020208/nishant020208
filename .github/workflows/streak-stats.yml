@@ -2,11 +2,11 @@ name: Update Streak Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Daily at midnight UTC
+    - cron: "0 3 * * *" # Daily at 03:00 UTC
   workflow_dispatch:
   push:
-    branches:
-      - main
+    paths:
+      - ".github/workflows/streak-stats.yml"
 
 permissions:
   contents: write
@@ -14,48 +14,78 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate streak stats SVG
-        uses: DenverCoder1/github-readme-streak-stats@v1
-        with:
-          user: nishant020208
-          theme: radical
-          hide_border: true
-          border_radius: 10
-          ring: FF6EC7
-          fire: FF6EC7
-          curr_streak_label: 36BCF7
-          side_labels: 36BCF7
-          dates: AAAAAA
-          side_nums: FF6EC7
-          curr_streak_num: FFFFFF
-          background: 0D1117
-          stroke: FF6EC730
-          output_path: profile/streak.svg
+      - name: Create profile directory
+        run: mkdir -p profile
 
-      - name: Generate weekly streak stats SVG
-        uses: DenverCoder1/github-readme-streak-stats@v1
+      # ── Main streak card ──────────────────────────────────────────────────
+      - name: Generate main streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          user: nishant020208
-          theme: radical
-          hide_border: true
-          mode: weekly
-          background: 0D1117
-          ring: 36BCF7
-          fire: 36BCF7
-          curr_streak_label: FF6EC7
-          output_path: profile/streak-weekly.svg
+          options: >-
+            user=nishant020208
+            &theme=radical
+            &hide_border=true
+            &border_radius=10
+            &card_width=950
+            &ring=FF6EC7
+            &fire=FF6EC7
+            &currStreakLabel=36BCF7
+            &sideLabels=36BCF7
+            &dates=AAAAAA
+            &sideNums=FF6EC7
+            &currStreakNum=FFFFFF
+            &background=0D1117
+            &stroke=FF6EC730
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
 
+      # Fallback: fetch via curl if the action fails
+      - name: Fallback – fetch main streak via curl
+        if: failure()
+        run: |
+          curl -fsSL \
+            "https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=950&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&sideLabels=36BCF7&dates=AAAAAA&sideNums=FF6EC7&currStreakNum=FFFFFF&background=0D1117&stroke=FF6EC730" \
+            -o profile/streak.svg \
+            --max-time 30 || echo "Curl fallback also failed; keeping existing file."
+
+      # ── Weekly streak card ────────────────────────────────────────────────
+      - name: Generate weekly streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: >-
+            user=nishant020208
+            &theme=radical
+            &hide_border=true
+            &mode=weekly
+            &background=0D1117
+            &ring=36BCF7
+            &fire=36BCF7
+            &currStreakLabel=FF6EC7
+          path: profile/streak-weekly.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      # Fallback: fetch weekly via curl if the action fails
+      - name: Fallback – fetch weekly streak via curl
+        if: failure()
+        run: |
+          curl -fsSL \
+            "https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&mode=weekly&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=FF6EC7" \
+            -o profile/streak-weekly.svg \
+            --max-time 30 || echo "Curl fallback also failed; keeping existing file."
+
+      # ── Commit any updates ────────────────────────────────────────────────
       - name: Commit streak stats SVGs
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions@users.noreply.github.com"
-          mkdir -p profile
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add profile/streak.svg profile/streak-weekly.svg
-          git commit -m "chore: update streak stats [skip ci]" || echo "No changes to commit"
+          git diff --staged --quiet || git commit -m "chore: update streak stats [skip ci]"
           git push
