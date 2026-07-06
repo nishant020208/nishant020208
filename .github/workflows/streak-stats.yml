@@ -30,14 +30,14 @@ jobs:
 
       - name: Generate main streak SVG
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STREAK_TOKEN }}
         run: |
           echo "==> Generating main streak stats..."
           python .github/scripts/generate_streak.py
 
       - name: Generate weekly streak SVG
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STREAK_TOKEN }}
         run: |
           echo "==> Generating weekly streak stats..."
           python .github/scripts/generate_streak_weekly.py
