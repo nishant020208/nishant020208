@@ -1,0 +1,61 @@
+name: Update Streak Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate streak stats SVG
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          user: nishant020208
+          theme: radical
+          hide_border: true
+          border_radius: 10
+          ring: FF6EC7
+          fire: FF6EC7
+          curr_streak_label: 36BCF7
+          side_labels: 36BCF7
+          dates: AAAAAA
+          side_nums: FF6EC7
+          curr_streak_num: FFFFFF
+          background: 0D1117
+          stroke: FF6EC730
+          output_path: profile/streak.svg
+
+      - name: Generate weekly streak stats SVG
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          user: nishant020208
+          theme: radical
+          hide_border: true
+          mode: weekly
+          background: 0D1117
+          ring: 36BCF7
+          fire: 36BCF7
+          curr_streak_label: FF6EC7
+          output_path: profile/streak-weekly.svg
+
+      - name: Commit streak stats SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@users.noreply.github.com"
+          mkdir -p profile
+          git add profile/streak.svg profile/streak-weekly.svg
+          git commit -m "chore: update streak stats [skip ci]" || echo "No changes to commit"
+          git push

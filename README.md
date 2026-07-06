@@ -117,7 +117,7 @@ $$
 
 <div align="center">
 
-<img width="90%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&border_radius=10&card_width=950&ring=FF6EC7&fire=FF6EC7&currStreakLabel=36BCF7&sideLabels=36BCF7&dates=AAAAAA&sideNums=FF6EC7&currStreakNum=FFFFFF&background=0D1117&stroke=FF6EC730"/>
+<img width="90%" src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile/streak.svg" alt="GitHub Streak Stats"/>
 
 </div>
 
@@ -126,7 +126,7 @@ $$
 <div align="center">
 
 <!-- Secondary Streak & High-Performance Stats (Counting Private) -->
-<img width="49%" src="https://streak-stats.demolab.com?user=nishant020208&theme=radical&hide_border=true&mode=weekly&background=0D1117&ring=36BCF7&fire=36BCF7&currStreakLabel=FF6EC7"/>
+<img width="49%" src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile/streak-weekly.svg" alt="GitHub Weekly Streak Stats"/>
 
 </div>
 
