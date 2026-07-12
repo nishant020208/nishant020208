@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.STREAK_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,23 +37,37 @@ jobs:
 
       - name: Regenerate SVG Stats
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STREAK_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           echo "==> Updating SVGs with live stats..."
           python update.py
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add dark.svg light.svg profile/streak.svg profile/streak-weekly.svg
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
           fi
           git commit -m "chore: update profile banner and streak stats [skip ci]"
-          for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin main && break
-            echo "Push attempt $i failed, retrying in 5s..."
+          
+          # Retry loop with stashing/rebasing to prevent push conflicts
+          for i in {1..5}; do
+            echo "Attempt $i to push changes..."
+            git fetch origin main
+            if git rebase origin/main; then
+              if git push origin main; then
+                echo "Successfully pushed changes!"
+                exit 0
+              fi
+            else
+              echo "Rebase failed, aborting..."
+              git rebase --abort
+            fi
+            echo "Push failed or rebase failed, retrying in 5 seconds..."
             sleep 5
           done
+          echo "Error: Failed to push stats update after 5 attempts."
+          exit 1

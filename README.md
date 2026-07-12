@@ -1,7 +1,8 @@
-<h1 align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Nishant&fontSize=80&animation=fadeIn&fontAlignY=35" alt="Header" />
-  <img src="assets/banner_logo.png" width="100%" />
-</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg">
+  <img alt="Nishant's Terminal Profile" src="dark.svg" width="100%">
+</picture>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nishant020208&color=blueviolet&style=for-the-badge&label=NEURAL+UPLINKS" />
