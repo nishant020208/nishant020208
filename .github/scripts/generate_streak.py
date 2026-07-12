@@ -4,6 +4,8 @@ Generate GitHub streak stats SVG using GitHub GraphQL API.
 Produces profile/streak.svg with real contribution data.
 """
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import os
 import sys
 import requests
@@ -45,6 +47,7 @@ def fetch_year(year):
             },
         },
         timeout=30,
+        verify=False,
     )
     resp.raise_for_status()
     data = resp.json()
