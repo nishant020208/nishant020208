@@ -1,0 +1,86 @@
+{
+  "CodeClub Pro": {
+    "title": "CodeClub Pro – Competitive Programming Platform",
+    "desc": "Smart platform for coding clubs with real coding practice, AI feedback, contests, and gamification.",
+    "status": 200
+  },
+  "TrustGov": {
+    "title": "Trust Track Guard",
+    "desc": "Governance-grade Grievance Resolution Verifier System with multi-source proof validation.",
+    "status": 200
+  },
+  "SVIT Attend Hub": {
+    "title": "SVIT ERP - Attendance Management System",
+    "desc": "Sardar Vallabhbhai Patel Institute of Technology - Enterprise Attendance Management System for Students, Teachers, Parents and Administrators",
+    "status": 200
+  },
+  "JobGuard": {
+    "title": "JobGuard — Fake Job Offer Detector",
+    "desc": "Forensic analysis of job offers. Paste a recruiter message to detect employment scam patterns, red flags, and verdicts.",
+    "status": 200
+  },
+  "Forest Pro": {
+    "title": "VanAdhikar Ledger",
+    "desc": "National forest intelligence and benefit-sharing platform for tribal families across Gujarat. Track entitlements, detect underpayments, resolve disputes — transparently.",
+    "status": 200
+  },
+  "IntelliFlow": {
+    "title": "DBT Sentinel — Leakage Detection",
+    "desc": "Detect and prevent leakage in Direct Benefit Transfer schemes.",
+    "status": 200
+  },
+  "AI Guardian": {
+    "title": "AI Fraud Radar for UPI Pro Max",
+    "desc": "Real-time AI-powered fraud detection for UPI transactions with advanced analytics and explainable AI.",
+    "status": 200
+  },
+  "Pulse": {
+    "title": "Pulse — Anonymous employee sentiment for HR teams",
+    "desc": "Pulse-survey analytics with a real anonymity engine. Sentiment, eNPS, and themes — never traceable to an individual.",
+    "status": 200
+  },
+  "Jarvis AI": {
+    "status": 404,
+    "desc": "Status 404"
+  },
+  "Mission Control / OnboardFlow": {
+    "title": "OnboardFlow — Mission Control for onboarding",
+    "desc": "Role-based onboarding checklists, approvals, and workflows for modern teams.",
+    "status": 200
+  },
+  "Excel Study AI": {
+    "title": "NOTE-AI",
+    "desc": "NOTE-AI Application",
+    "status": 200
+  },
+  "GramSetu": {
+    "title": "ग्रामीण योजना गाइड - Grameen Scheme Guide",
+    "desc": "सरकारी योजनाओं की पात्रता जाँचें। Check government scheme eligibility for rural India.",
+    "status": 200
+  },
+  "SkillVfy": {
+    "title": "Skill Truth Engine",
+    "desc": "Skill Truth Engine verifies practical skills beyond certificates using AI, multi-level testing, and a Skill Reality Index.",
+    "status": 200
+  },
+  "Jarvis v2": {
+    "title": "財務監控儀表板",
+    "desc": "No Description",
+    "status": 200
+  },
+  "DeepMerge": {
+    "title": "CMLRE Data Platform",
+    "desc": "AI-powered ocean data discovery and visualization platform",
+    "status": 200
+  },
+  "Verdant": {
+    "title": "Vardant",
+    "desc": "Lovable Generated Project",
+    "status": 200
+  },
+  "Todo List": {
+    "title": "QUEST-TODO",
+    "desc": "Lovable Generated Project",
+    "status": 200
+  }
+}
