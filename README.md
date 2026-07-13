@@ -222,28 +222,28 @@ $$
 
 | Project | Description |
 
-| 💻 **[CodeClub Pro](https://codeclub1-pro.vercel.app)** | Full-stack coding education platform with courses, live coding battles, and progress tracking. |
-| 🌬️ **[AirSafe Navigator](https://airsafe-navigator.vercel.app)** | AQI monitoring for Gujarat's industrial belt with auto-generated GSPCB compliance PDFs. |
-| 🌱 **[EnviroSense Pro](https://environ-sense.vercel.app)** | Environmental monitoring dashboard visualizing air quality and compliance trends. |
-| 🏛️ **[TrustGov](https://trustgov.vercel.app)** | Governance-grade Grievance Resolution Verifier System with multi-source proof validation. |
-| 🎓 **[SVIT Attend Hub](https://svit-attend-hub.vercel.app)** | Enterprise Attendance Management System for SVIT students, teachers, parents, and administrators. |
-| 🛡️ **[JobGuard](https://job-offer-guardian.vercel.app)** | Detects scam patterns in job postings to protect job seekers from fraudulent offers. |
-| 📋 **[National Skill Registry](https://national-skill-registry.vercel.app)** | Official government skill passport and credential verification system for technical graduates. |
-| 🎙️ **[VoxGuard](https://voxguard-sound.vercel.app)** | Detects AI-generated deepfake audio using signal analysis. |
-| 🌲 **[Forest Pro](https://forest-pro.vercel.app)** | National forest intelligence and benefit-sharing platform for tribal families across Gujarat. |
-| 🔄 **[IntelliFlow](https://intelliflow-dbt.vercel.app)** | Detect and prevent leakage in Direct Benefit Transfer (DBT) schemes. |
-| 🤖 **[AI Guardian](https://ai-guardian-ruddy.vercel.app)** | Real-time AI-powered fraud detection for UPI transactions with advanced analytics. |
-| 📊 **[Pulse](https://pulse-check-opal.vercel.app)** | Employee pulse-survey platform with k-anonymity enforcement and AI sentiment analysis. |
-| 🧠 **[Jarvis AI](https://jarvis-ai-hazel.vercel.app)** | Personal AI assistant for productivity and daily task automation. |
-| 🚀 **[Mission Control / OnboardFlow](https://mission-control-onboarding.vercel.app)** | Role-based onboarding checklists, approvals, and workflows for modern teams. |
-| 📗 **[Excel Study AI](https://excel-study-ai.vercel.app)** | AI-assisted study notes generator and exam preparation helper. |
-| 🌾 **[GramSetu](https://gramsetu-sch.vercel.app)** | Check government scheme eligibility for rural India. |
-| ✅ **[SkillVfy](https://skillvfy.vercel.app)** | Verifies practical skills beyond certificates using AI, multi-level testing, and a Skill Reality Index. |
-| 🧠 **[Jarvis v2](https://jarvis-pink-seven.vercel.app)** | Financial monitoring dashboard for tracking revenue and expenses. |
-| 🔀 **[DeepMerge](https://deepmerge.vercel.app)** | AI-powered ocean data discovery and visualization platform. |
-| 📝 **[Nishatt Attendance](https://nishatt-attendance.vercel.app)** | Lightweight mobile-first student attendance tracker built with React and Capacitor. |
-| 🌿 **[Verdant](https://verdant-alpha.vercel.app)** | Environmental dashboard and plant health monitoring portal. |
-| ✔️ **[Todo List](https://todo-list-rho-topaz.vercel.app)** | Early learning project — foundational task manager. |
+| 💻 **[CodeClub Pro](https://codeclub1-pro.vercel.app)** | Full-stack coding education platform with courses, live coding battles, and progress tracking. |<br>
+| 🌬️ **[AirSafe Navigator](https://airsafe-navigator.vercel.app)** | AQI monitoring for Gujarat's industrial belt with auto-generated GSPCB compliance PDFs. |<br>
+| 🌱 **[EnviroSense Pro](https://environ-sense.vercel.app)** | Environmental monitoring dashboard visualizing air quality and compliance trends. |<br>
+| 🏛️ **[TrustGov](https://trustgov.vercel.app)** | Governance-grade Grievance Resolution Verifier System with multi-source proof validation. |<br>
+| 🎓 **[SVIT Attend Hub](https://svit-attend-hub.vercel.app)** | Enterprise Attendance Management System for SVIT students, teachers, parents, and administrators. |<br>
+| 🛡️ **[JobGuard](https://job-offer-guardian.vercel.app)** | Detects scam patterns in job postings to protect job seekers from fraudulent offers. |<br>
+| 📋 **[National Skill Registry](https://national-skill-registry.vercel.app)** | Official government skill passport and credential verification system for technical graduates. |<br>
+| 🎙️ **[VoxGuard](https://voxguard-sound.vercel.app)** | Detects AI-generated deepfake audio using signal analysis. |<br>
+| 🌲 **[Forest Pro](https://forest-pro.vercel.app)** | National forest intelligence and benefit-sharing platform for tribal families across Gujarat. |<br>
+| 🔄 **[IntelliFlow](https://intelliflow-dbt.vercel.app)** | Detect and prevent leakage in Direct Benefit Transfer (DBT) schemes. |<br>
+| 🤖 **[AI Guardian](https://ai-guardian-ruddy.vercel.app)** | Real-time AI-powered fraud detection for UPI transactions with advanced analytics. |<br>
+| 📊 **[Pulse](https://pulse-check-opal.vercel.app)** | Employee pulse-survey platform with k-anonymity enforcement and AI sentiment analysis. |<br>
+| 🧠 **[Jarvis AI](https://jarvis-ai-hazel.vercel.app)** | Personal AI assistant for productivity and daily task automation. |<br>
+| 🚀 **[Mission Control / OnboardFlow](https://mission-control-onboarding.vercel.app)** | Role-based onboarding checklists, approvals, and workflows for modern teams. |<br>
+| 📗 **[Excel Study AI](https://excel-study-ai.vercel.app)** | AI-assisted study notes generator and exam preparation helper. |<br>
+| 🌾 **[GramSetu](https://gramsetu-sch.vercel.app)** | Check government scheme eligibility for rural India. |<br>
+| ✅ **[SkillVfy](https://skillvfy.vercel.app)** | Verifies practical skills beyond certificates using AI, multi-level testing, and a Skill Reality Index. |<br>
+| 🧠 **[Jarvis v2](https://jarvis-pink-seven.vercel.app)** | Financial monitoring dashboard for tracking revenue and expenses. |<br>
+| 🔀 **[DeepMerge](https://deepmerge.vercel.app)** | AI-powered ocean data discovery and visualization platform. |<br>
+| 📝 **[Nishatt Attendance](https://nishatt-attendance.vercel.app)** | Lightweight mobile-first student attendance tracker built with React and Capacitor. |<br>
+| 🌿 **[Verdant](https://verdant-alpha.vercel.app)** | Environmental dashboard and plant health monitoring portal. |<br>
+| ✔️ **[Todo List](https://todo-list-rho-topaz.vercel.app)** | Early learning project — foundational task manager. |<br>
  
  ---
 
