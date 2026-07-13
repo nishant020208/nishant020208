@@ -193,10 +193,10 @@ def make_templates():
       <tspan x="0" y="315" class="prompt">root@nishant-core:~#</tspan> <tspan class="command">./fetch_stats.sh --live</tspan>
       
       <!-- Live GitHub Stats -->
-      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">{{TOTAL_CONTRIBUTIONS}} (2020 – 2026)</tspan>
-      <tspan x="0" y="360" class="metric-label">Daily Streak:</tspan> <tspan class="value" dx="15">{{CURRENT_STREAK}} days</tspan> <tspan class="label" dx="5">|</tspan> <tspan class="metric-label" dx="5">Longest:</tspan> <tspan class="value" dx="5">{{LONGEST_STREAK}} days</tspan>
-      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">{{WEEKLY_STREAK}} weeks (This Week: {{THIS_WEEK_CONTRIBUTIONS}})</tspan>
-      <tspan x="0" y="400" class="metric-label">GitHub Nodes:</tspan> <tspan class="value" dx="10">Followers: {{FOLLOWERS}} | Repos: {{REPOS}} | Stars: {{STARS}}</tspan>
+      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">{{{{TOTAL_CONTRIBUTIONS}}}} (2020 – 2026)</tspan>
+      <tspan x="0" y="360" class="metric-label">Daily Streak:</tspan> <tspan class="value" dx="15">{{{{CURRENT_STREAK}}}} days</tspan> <tspan class="label" dx="5">|</tspan> <tspan class="metric-label" dx="5">Longest:</tspan> <tspan class="value" dx="5">{{{{LONGEST_STREAK}}}} days</tspan>
+      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">{{{{WEEKLY_STREAK}}}} weeks (This Week: {{{{THIS_WEEK_CONTRIBUTIONS}}}})</tspan>
+      <tspan x="0" y="400" class="metric-label">GitHub Nodes:</tspan> <tspan class="value" dx="10">Followers: {{{{FOLLOWERS}}}} | Repos: {{{{REPOS}}}} | Stars: {{{{STARS}}}}</tspan>
     </text>
     
     <!-- Blinking Cursor -->
@@ -325,10 +325,10 @@ def make_templates():
       <tspan x="0" y="315" class="prompt">root@nishant-core:~#</tspan> <tspan class="command">./fetch_stats.sh --live</tspan>
       
       <!-- Live GitHub Stats -->
-      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">{{TOTAL_CONTRIBUTIONS}} (2020 – 2026)</tspan>
-      <tspan x="0" y="360" class="metric-label">Daily Streak:</tspan> <tspan class="value" dx="15">{{CURRENT_STREAK}} days</tspan> <tspan class="label" dx="5">|</tspan> <tspan class="metric-label" dx="5">Longest:</tspan> <tspan class="value" dx="5">{{LONGEST_STREAK}} days</tspan>
-      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">{{WEEKLY_STREAK}} weeks (This Week: {{THIS_WEEK_CONTRIBUTIONS}})</tspan>
-      <tspan x="0" y="400" class="metric-label">GitHub Nodes:</tspan> <tspan class="value" dx="10">Followers: {{FOLLOWERS}} | Repos: {{REPOS}} | Stars: {{STARS}}</tspan>
+      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">{{{{TOTAL_CONTRIBUTIONS}}}} (2020 – 2026)</tspan>
+      <tspan x="0" y="360" class="metric-label">Daily Streak:</tspan> <tspan class="value" dx="15">{{{{CURRENT_STREAK}}}} days</tspan> <tspan class="label" dx="5">|</tspan> <tspan class="metric-label" dx="5">Longest:</tspan> <tspan class="value" dx="5">{{{{LONGEST_STREAK}}}} days</tspan>
+      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">{{{{WEEKLY_STREAK}}}} weeks (This Week: {{{{THIS_WEEK_CONTRIBUTIONS}}}})</tspan>
+      <tspan x="0" y="400" class="metric-label">GitHub Nodes:</tspan> <tspan class="value" dx="10">Followers: {{{{FOLLOWERS}}}} | Repos: {{{{REPOS}}}} | Stars: {{{{STARS}}}}</tspan>
     </text>
     
     <!-- Blinking Cursor -->

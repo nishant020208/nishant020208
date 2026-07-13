@@ -16,20 +16,20 @@
   <line x1="334" y1="18" x2="334" y2="177" stroke="#21262d" stroke-width="1"/>
   <g transform="translate(83,97)">
     <text x="0" y="-30" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="12" fill="#FF6EC7">This Week</text>
-    <text x="0" y="14" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="url(#g1)">342</text>
+    <text x="0" y="14" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="url(#g1)">35</text>
     <text x="0" y="38" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="10" fill="#8b949e">contributions</text>
   </g>
   <g transform="translate(250,97)">
     <circle cx="0" cy="-22" r="44" fill="none" stroke="#36BCF712" stroke-width="8"/>
     <circle cx="0" cy="-22" r="44" fill="none" stroke="url(#g1)" stroke-width="2.5" opacity="0.9"/>
     <text x="0" y="-12" text-anchor="middle" font-size="24">🔥</text>
-    <text x="0" y="46" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">17</text>
+    <text x="0" y="46" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">18</text>
     <text x="0" y="66" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="12" fill="#FF6EC7">Weekly Streak</text>
     <text x="0" y="84" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="10" fill="#8b949e">Week of Mar 16, 2026</text>
   </g>
   <g transform="translate(417,97)">
     <text x="0" y="-30" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="12" fill="#FF6EC7">Longest Weekly</text>
-    <text x="0" y="14" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="url(#g2)">17</text>
-    <text x="0" y="38" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="10" fill="#8b949e">Mar 16 – Jul 12, 2026</text>
+    <text x="0" y="14" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="36" font-weight="800" fill="url(#g2)">18</text>
+    <text x="0" y="38" text-anchor="middle" font-family="'Segoe UI',Ubuntu,sans-serif" font-size="10" fill="#8b949e">Mar 16 – Jul 19, 2026</text>
   </g>
 </svg>
