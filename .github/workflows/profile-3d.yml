@@ -2,8 +2,10 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 */6 * * *" # Runs every 6 hours
   workflow_dispatch:
+  repository_dispatch:
+    types: [update-stats]
   push:
     branches:
       - main

@@ -2,8 +2,10 @@ name: Update README and SVG Stats
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # Runs every 6 hours
+    - cron: "*/30 * * * *"   # Runs every 30 minutes
   workflow_dispatch:        # Allows manual triggering
+  repository_dispatch:      # Allows triggering via API (e.g. from other repos or local scripts)
+    types: [update-stats]
   push:
     branches:
       - main
