@@ -15,7 +15,9 @@ GRAPHQL_URL = "https://api.github.com/graphql"
 def fetch_github_api_stats():
     """Fetch followers, repos, and stars from GitHub REST API."""
     token = os.environ.get("GITHUB_TOKEN", "")
-    headers = {}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
     if token:
         headers["Authorization"] = f"token {token}"
         
@@ -48,8 +50,11 @@ def fetch_github_api_stats():
 def fetch_contributions_for_year(year):
     """Fetch contribution days for a specific year using HTML scraping."""
     url = f"https://github.com/users/{USERNAME}/contributions?from={year}-01-01&to={year}-12-31"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
     try:
-        resp = requests.get(url, verify=False, timeout=30)
+        resp = requests.get(url, headers=headers, verify=False, timeout=30)
         resp.raise_for_status()
     except Exception as e:
         print(f"Error fetching contributions for year {year}: {e}", file=sys.stderr)
