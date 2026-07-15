@@ -88,7 +88,7 @@ $$
 
 <div align="center">
 
-<img width="85%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nishant020208&theme=radical"/>
+<img width="90%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github"/>
 
 </div>
 
@@ -96,19 +96,9 @@ $$
 
 <div align="center">
 
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nishant020208&theme=radical"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&theme=radical&hide_border=true&include_all_commits=true&count_private=true&layout=compact"/>
 
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nishant020208&theme=radical"/>
-
-<img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=nishant020208&theme=radical"/>
-
-</div>
-
-<br>
-
-<div align="center">
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nishant020208&theme=radical&utcOffset=5.5"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/wakatime?username=nishant020208&theme=radical&hide_border=true&layout=compact"/>
 
 </div>
 
