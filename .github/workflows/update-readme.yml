@@ -48,7 +48,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add dark.svg light.svg profile/streak.svg profile/streak-weekly.svg
+          git add dark.svg light.svg profile/streak.svg profile/streak-weekly.svg profile/github-stats.svg profile/top-langs.svg
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0

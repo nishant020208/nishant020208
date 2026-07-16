@@ -88,7 +88,7 @@ $$
 
 <div align="center">
 
-<img width="90%" src="https://github-readme-stats.vercel.app/api?username=nishant020208&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github"/>
+<img width="90%" src="profile/github-stats.svg"/>
 
 </div>
 
@@ -96,9 +96,7 @@ $$
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishant020208&theme=radical&hide_border=true&include_all_commits=true&count_private=true&layout=compact"/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/wakatime?username=nishant020208&theme=radical&hide_border=true&layout=compact"/>
+<img width="90%" src="profile/top-langs.svg"/>
 
 </div>
 

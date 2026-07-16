@@ -12,6 +12,17 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 USERNAME = "nishant020208"
 GRAPHQL_URL = "https://api.github.com/graphql"
 
+LANG_COLORS = {
+    "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "Python": "#3572A5",
+    "HTML": "#e34c26", "CSS": "#563d7c", "C": "#555555", "C++": "#f34b7d",
+    "Java": "#b07219", "Shell": "#89e051", "Rust": "#dea584", "Go": "#00ADD8",
+    "Ruby": "#701516", "PHP": "#4F5D95", "Dart": "#00B4AB", "Kotlin": "#A97BFF",
+    "Swift": "#F05138", "Jupyter Notebook": "#DA5B0B", "Vue": "#41b883",
+    "SCSS": "#c6538c", "Dockerfile": "#384d54", "Makefile": "#427819",
+    "PowerShell": "#012456", "Batchfile": "#C1F12E", "EJS": "#a91e50",
+    "Svelte": "#ff3e00", "Lua": "#000080", "R": "#198CE7",
+}
+
 def fetch_github_api_stats():
     """Fetch followers, repos, and stars from GitHub REST API."""
     token = os.environ.get("GITHUB_TOKEN", "")
@@ -24,6 +35,7 @@ def fetch_github_api_stats():
     followers = 0
     public_repos = 0
     stars = 0
+    repos_data = []
     
     try:
         # Fetch user profile
@@ -45,7 +57,7 @@ def fetch_github_api_stats():
         print(f"Warning: Failed to fetch GitHub API stats: {e}", file=sys.stderr)
         # We will keep default values of 0 if API fails
         
-    return followers, public_repos, stars   
+    return followers, public_repos, stars, repos_data   
 
 def fetch_contributions_for_year(year):
     """Fetch contribution days for a specific year using HTML scraping."""
@@ -310,9 +322,140 @@ def generate_legacy_weekly_streak_svg(this_week, cur, cur_s, cur_e, lng, lng_s, 
   </g>
 </svg>"""
 
+def fetch_language_stats(repos_data):
+    """Fetch detailed language byte counts across all non-fork repos."""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    if token:
+        headers["Authorization"] = f"token {token}"
+    language_bytes = {}
+    for repo in repos_data:
+        if not isinstance(repo, dict) or repo.get("fork"):
+            continue
+        lang_url = repo.get("languages_url", "")
+        if not lang_url:
+            continue
+        try:
+            r = requests.get(lang_url, headers=headers, timeout=10)
+            if r.status_code == 200:
+                for lang, byte_count in r.json().items():
+                    language_bytes[lang] = language_bytes.get(lang, 0) + byte_count
+        except Exception:
+            continue
+    return language_bytes
+
+def generate_github_stats_svg(total_contribs, cur_streak, lng_streak, followers, repos, stars):
+    """Generate a self-hosted GitHub stats card SVG in radical theme."""
+    score = (stars * 2) + (total_contribs * 0.5) + (followers * 3) + (repos * 1)
+    if score >= 5000: rank = "S+"
+    elif score >= 2000: rank = "S"
+    elif score >= 1000: rank = "A++"
+    elif score >= 500: rank = "A+"
+    elif score >= 200: rank = "A"
+    elif score >= 100: rank = "B+"
+    else: rank = "B"
+
+    radius = 40
+    circ = 2 * 3.14159265 * radius
+    progress = min(score / 2000, 1.0)
+    dash = circ * progress
+    gap = circ - dash
+
+    items = [
+        ("Total Stars Earned", str(stars), "#f8d847"),
+        ("Total Contributions", str(total_contribs), "#fe428e"),
+        ("Current Streak", f"{cur_streak} days", "#a9fef7"),
+        ("Public Repos", str(repos), "#36bcf7"),
+        ("Followers", str(followers), "#39d353"),
+    ]
+
+    rows = ""
+    for i, (label, value, color) in enumerate(items):
+        y = 25 * i
+        rows += (
+            f'    <g transform="translate(0, {y})">'
+            f'<circle cx="8" cy="-4" r="5" fill="{color}"/>'
+            f'<text x="22" y="0" font-family="\'Segoe UI\', Ubuntu, \'Helvetica Neue\', sans-serif" font-size="14" fill="#a9fef7">{label}:</text>'
+            f'<text x="270" y="0" text-anchor="end" font-family="\'Segoe UI\', Ubuntu, \'Helvetica Neue\', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">{value}</text>'
+            f'</g>\n'
+        )
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+  <defs>
+    <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fe428e"/>
+      <stop offset="100%" stop-color="#f8d847"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="#141321"/>
+  <g transform="translate(25, 35)">
+    <text font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="18" font-weight="bold" fill="#fe428e">Nishant's GitHub Stats</text>
+  </g>
+  <g transform="translate(25, 65)">
+{rows}  </g>
+  <g transform="translate(420, 97)">
+    <circle cx="0" cy="0" r="{radius}" fill="none" stroke="#f8d84720" stroke-width="6"/>
+    <circle cx="0" cy="0" r="{radius}" fill="none" stroke="url(#rg)" stroke-width="6" stroke-dasharray="{dash:.1f} {gap:.1f}" transform="rotate(-90)" stroke-linecap="round"/>
+    <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="30" font-weight="bold" fill="#f8d847">{rank}</text>
+  </g>
+</svg>"""
+
+def generate_top_langs_svg(language_bytes):
+    """Generate a self-hosted top languages card SVG in radical theme."""
+    if not language_bytes:
+        return ('<svg xmlns="http://www.w3.org/2000/svg" width="495" height="120" viewBox="0 0 495 120">'
+                '<rect x="0.5" y="0.5" rx="4.5" width="494" height="119" fill="#141321"/>'
+                '<text x="25" y="35" font-family="\'Segoe UI\', Ubuntu, sans-serif" font-size="18" font-weight="bold" fill="#fe428e">Most Used Languages</text>'
+                '<text x="25" y="70" font-family="\'Segoe UI\', Ubuntu, sans-serif" font-size="14" fill="#a9fef7">No language data available</text>'
+                '</svg>')
+
+    total = sum(language_bytes.values())
+    sorted_langs = sorted(language_bytes.items(), key=lambda x: x[1], reverse=True)[:8]
+    bar_w = 445
+
+    segs = ""
+    xo = 0.0
+    for lang, bc in sorted_langs:
+        w = bar_w * (bc / total)
+        c = LANG_COLORS.get(lang, "#8b949e")
+        segs += f'      <rect x="{xo:.1f}" y="0" width="{max(w, 0.5):.1f}" height="8" fill="{c}"/>\n'
+        xo += w
+
+    legend = ""
+    for i, (lang, bc) in enumerate(sorted_langs):
+        pct = bc / total * 100
+        c = LANG_COLORS.get(lang, "#8b949e")
+        x = (i % 2) * 220
+        y = (i // 2) * 25
+        legend += (
+            f'    <g transform="translate({x}, {y})">'
+            f'<circle cx="5" cy="-3" r="5" fill="{c}"/>'
+            f'<text x="15" y="1" font-family="\'Segoe UI\', Ubuntu, sans-serif" font-size="11.5" fill="#a9fef7">{lang} {pct:.2f}%</text>'
+            f'</g>\n'
+        )
+
+    n_rows = (len(sorted_langs) + 1) // 2
+    th = 80 + n_rows * 25 + 5
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="{th}" viewBox="0 0 495 {th}">
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="{th - 1}" fill="#141321"/>
+  <text x="25" y="35" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="18" font-weight="bold" fill="#fe428e">Most Used Languages</text>
+  <g transform="translate(25, 50)">
+    <clipPath id="lc">
+      <rect x="0" y="0" width="{bar_w}" height="8" rx="5"/>
+    </clipPath>
+    <g clip-path="url(#lc)">
+{segs}    </g>
+  </g>
+  <g transform="translate(25, 75)">
+{legend}  </g>
+</svg>"""
+
 def main():
     print("Fetching GitHub REST API stats...")
-    followers, repos, stars = fetch_github_api_stats()
+    followers, repos, stars, repos_data = fetch_github_api_stats()
     print(f"API stats: followers={followers}, repos={repos}, stars={stars}")
 
     print("Fetching contribution data year-by-year...")
@@ -389,6 +532,23 @@ def main():
     with open("profile/streak-weekly.svg", "w", encoding="utf-8") as f:
         f.write(legacy_weekly_streak_svg)
     print("Saved profile/streak-weekly.svg")
+
+    # Generate self-hosted stats cards (replaces external github-readme-stats)
+    print("Fetching language stats...")
+    language_bytes = fetch_language_stats(repos_data)
+    print(f"  Languages found: {len(language_bytes)}")
+
+    github_stats_svg = generate_github_stats_svg(
+        total_contributions, cur_streak, lng_streak, followers, repos, stars
+    )
+    with open("profile/github-stats.svg", "w", encoding="utf-8") as f:
+        f.write(github_stats_svg)
+    print("Saved profile/github-stats.svg")
+
+    top_langs_svg = generate_top_langs_svg(language_bytes)
+    with open("profile/top-langs.svg", "w", encoding="utf-8") as f:
+        f.write(top_langs_svg)
+    print("Saved profile/top-langs.svg")
 
 if __name__ == "__main__":
     main()
