@@ -159,9 +159,9 @@
       <tspan x="0" y="315" class="prompt">root@nishant-core:~#</tspan> <tspan class="command">./fetch_stats.sh --live</tspan>
       
       <!-- Live GitHub Stats -->
-      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">2440 (2020 – 2026)</tspan>
+      <tspan x="0" y="340" class="metric-label">Contributions:</tspan> <tspan class="value" dx="5">2442 (2020 – 2026)</tspan>
       <tspan x="0" y="360" class="metric-label">Daily Streak:</tspan> <tspan class="value" dx="15">16 days</tspan> <tspan class="label" dx="5">|</tspan> <tspan class="metric-label" dx="5">Longest:</tspan> <tspan class="value" dx="5">68 days</tspan>
-      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">18 weeks (This Week: 294)</tspan>
+      <tspan x="0" y="380" class="metric-label">Weekly Streak:</tspan> <tspan class="value" dx="5">18 weeks (This Week: 296)</tspan>
       <tspan x="0" y="400" class="metric-label">GitHub Nodes:</tspan> <tspan class="value" dx="10">Followers: 0 | Repos: 0 | Stars: 0</tspan>
     </text>
     
