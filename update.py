@@ -45,7 +45,7 @@ def fetch_github_api_stats():
         print(f"Warning: Failed to fetch GitHub API stats: {e}", file=sys.stderr)
         # We will keep default values of 0 if API fails
         
-    return followers, public_repos, stars
+    return followers, public_repos, stars   
 
 def fetch_contributions_for_year(year):
     """Fetch contribution days for a specific year using HTML scraping."""
