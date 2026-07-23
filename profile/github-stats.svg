@@ -11,14 +11,14 @@
   </g>
   <g transform="translate(25, 65)">
     <g transform="translate(0, 0)"><circle cx="8" cy="-4" r="5" fill="#f8d847"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Total Stars Earned:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">0</text></g>
-    <g transform="translate(0, 25)"><circle cx="8" cy="-4" r="5" fill="#fe428e"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Total Contributions:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">2594</text></g>
+    <g transform="translate(0, 25)"><circle cx="8" cy="-4" r="5" fill="#fe428e"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Total Contributions:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">2596</text></g>
     <g transform="translate(0, 50)"><circle cx="8" cy="-4" r="5" fill="#a9fef7"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Current Streak:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">23 days</text></g>
     <g transform="translate(0, 75)"><circle cx="8" cy="-4" r="5" fill="#36bcf7"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Public Repos:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">0</text></g>
     <g transform="translate(0, 100)"><circle cx="8" cy="-4" r="5" fill="#39d353"/><text x="22" y="0" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7">Followers:</text><text x="270" y="0" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#a9fef7" font-weight="bold">0</text></g>
   </g>
   <g transform="translate(420, 97)">
     <circle cx="0" cy="0" r="40" fill="none" stroke="#f8d84720" stroke-width="6"/>
-    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#rg)" stroke-width="6" stroke-dasharray="163.0 88.3" transform="rotate(-90)" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#rg)" stroke-width="6" stroke-dasharray="163.1 88.2" transform="rotate(-90)" stroke-linecap="round"/>
     <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="30" font-weight="bold" fill="#f8d847">A++</text>
   </g>
 </svg>
