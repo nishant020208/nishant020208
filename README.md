@@ -69,13 +69,16 @@ $$
 
 <div align="center">
 
-| **Event** | **Rank** | **Mission Intelligence** |
+| **Event / Milestone** | **Rank** | **Mission Intelligence** |
 | :--- | :--- | :--- |
 | **GDG HackFest 2026** | 🥇 **1st Rank** | **1st out of 100+ teams** in a multi-disciplinary engineering sprint. Focused on rapid prototyping and system reliability under extreme load. |
 | **Professional Milestone** | 🌟 **BETA** | Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on complex adversarial web workflows. |
+| **Commit Velocity** | ⚡ **God Committer** | **4,800+ Verified Contributions** with unbroken consistency and rapid deployment frequency across repositories. |
+| **Architectural Output** | 📦 **High Creator** | **21+ Public Repositories** architected from scratch with high modularity and clean engineering standards. |
+| **Language Spectrum** | 🌈 **Polyglot** | Production fluency spanning **8+ language ecosystems** (Python, JavaScript, TypeScript, C, HTML, CSS, Shell). |
 
 <p align="center">
-  <img src="https://github-trophies.vercel.app/?username=nishant020208&theme=radical&margin-w=4&rank=SSS,SS,S,A" alt="Elite Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=nishant020208&theme=radical&column=4&margin-w=8&margin-h=8&title=Commits,Repositories,Stars,Followers,MultiLanguage,LongTimeUser,NewUser" alt="Elite Trophies" />
 </p>
 
 </div>
@@ -125,7 +128,7 @@ $$
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=58A6FF&line=F778BA&point=FFFFFF&area=true&hide_border=true&custom_steps=5"/>
+<img width="100%" src="https://activity-graph.vercel.app/graph?username=nishant020208&bg_color=0D1117&color=58A6FF&line=F778BA&point=FFFFFF&area=true&hide_border=true&custom_steps=5" alt="Nishant's Contribution Activity Graph" />
 
 </div>
 
