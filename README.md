@@ -28,7 +28,7 @@
   
   I'm a **Senior Systems Architect** & **Machine Intelligence Engineer** specializing in **Autonomous Agent Ecosystems**, **Zero-Knowledge Architecture**, and **High-Frequency Distributed Systems**. I don't just write code; I design unbreakable digital organisms that optimize, adapt, and scale autonomously.
   
-  - 🧠 **Cognitive Focus**: Deep Q-Networks (DQN) & Vision-Language Models (VLM) for autonomous web traversal.
+  - 🧠 **Cognitive Focus**: Deep Q-Networks (DQN) & Vision-Languagss Models (VLM) for autonomous web traversal.
   - 🚀 **Flagship Protocol**: [META](https://github.com/nishant020208/META) — High-fidelity browser intelligence with sub-millisecond reasoning.
   - 🏗️ **Infrastructure**: Architecting horizontally scaling multi-region meshes and trustless verifiable protocols.
 </p>
