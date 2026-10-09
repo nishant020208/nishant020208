@@ -73,8 +73,8 @@ $$
 | :--- | :--- | :--- |
 | **GDG HackFest 2026** | 🥇 **1st Rank** | **1st out of 100+ teams** in a multi-disciplinary engineering sprint. Focused on rapid prototyping and system reliability under extreme load. |
 | **Professional Milestone** | 🌟 **BETA** | Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on complex adversarial web workflows. |
-| **Commit Velocity** | ⚡ **God Committer** | **4,800+ Verified Contributions** with unbroken consistency and rapid deployment frequency across repositories. |
-| **Architectural Output** | 📦 **High Creator** | **21+ Public Repositories** architected from scratch with high modularity and clean engineering standards. |
+| **Commit Velocity** | ⚡ **God Committer** | **5,600+ Verified Contributions** with unbroken consistency and rapid deployment frequency across repositories. |
+| **Architectural Output** | 📦 **High Creator** | **23+ Public Repositories** architected from scratch with high modularity and clean engineering standards. |
 | **Language Spectrum** | 🌈 **Polyglot** | Production fluency spanning **8+ language ecosystems** (Python, JavaScript, TypeScript, C, HTML, CSS, Shell). |
 
 <p align="center">
@@ -109,7 +109,7 @@ $$
 
 <div align="center">
 
-<img width="90%" src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile/streak.svg" alt="GitHub Streak Stats"/>
+<img width="90%" src="profile/streak.svg" alt="GitHub Streak Stats"/>
 
 </div>
 
@@ -118,7 +118,7 @@ $$
 <div align="center">
 
 <!-- Secondary Streak & High-Performance Stats (Counting Private) -->
-<img width="49%" src="https://raw.githubusercontent.com/nishant020208/nishant020208/main/profile/streak-weekly.svg" alt="GitHub Weekly Streak Stats"/>
+<img width="49%" src="profile/streak-weekly.svg" alt="GitHub Weekly Streak Stats"/>
 
 </div>
 

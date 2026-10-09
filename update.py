@@ -66,68 +66,142 @@ def fetch_github_api_stats():
         
     return followers, public_repos, stars, repos_data   
 
-def fetch_contributions_for_year(year):
-    """Fetch contribution days for a specific year using HTML scraping."""
+GRAPHQL_QUERY = """
+query($username: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $username) {
+    contributionsCollection(from: $from, to: $to) {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
+def fetch_contributions_graphql(year, token):
+    """Fetch contribution days for a specific year using GitHub GraphQL API."""
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+    }
+    resp = requests.post(
+        GRAPHQL_URL,
+        headers=headers,
+        json={
+            "query": GRAPHQL_QUERY,
+            "variables": {
+                "username": USERNAME,
+                "from": f"{year}-01-01T00:00:00Z",
+                "to": f"{year}-12-31T23:59:59Z",
+            },
+        },
+        timeout=30,
+        verify=False,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    if "errors" in data or "data" not in data or not data.get("data") or not data["data"].get("user"):
+        raise RuntimeError(f"GraphQL error or empty response: {data.get('errors')}")
+    cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    days = []
+    for week in cal["weeks"]:
+        for d in week["contributionDays"]:
+            days.append({"date": d["date"], "count": d["contributionCount"]})
+    return days
+
+def fetch_contributions_html(year, retries=3):
+    """Fetch contribution days for a specific year using HTML scraping with retries."""
     url = f"https://github.com/users/{USERNAME}/contributions?from={year}-01-01&to={year}-12-31"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
     }
-    try:
-        resp = requests.get(url, headers=headers, verify=False, timeout=30)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"Error fetching contributions for year {year}: {e}", file=sys.stderr)
-        return []
-        
-    soup = BeautifulSoup(resp.text, 'html.parser')
-    tds = soup.find_all('td', class_='ContributionCalendar-day')
-    day_map = {td.get('id'): td.get('data-date') for td in tds if td.get('id') and td.get('data-date')}
-    
-    tooltips = soup.find_all('tool-tip')
-    days = []
-    parsed_dates = set()
-    
-    for tt in tooltips:
-        for_id = tt.get('for')
-        if for_id in day_map:
-            date_str = day_map[for_id]
-            if date_str in parsed_dates:
-                continue
-            parsed_dates.add(date_str)
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(url, headers=headers, verify=False, timeout=30)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            tds = soup.find_all('td', class_='ContributionCalendar-day')
+            day_map = {td.get('id'): td.get('data-date') for td in tds if td.get('id') and td.get('data-date')}
+            if not day_map:
+                buttons = soup.find_all('button', class_='ContributionCalendar-day')
+                day_map = {b.get('id'): b.get('data-date') for b in buttons if b.get('id') and b.get('data-date')}
             
-            text = tt.get_text().strip()
-            if text.startswith('No contributions'):
-                count = 0
-            else:
-                m = re.match(r'^([0-9,]+)\s+contribution', text)
-                if m:
-                    count = int(m.group(1).replace(',', ''))
+            tooltips = soup.find_all('tool-tip')
+            days = []
+            parsed_dates = set()
+            
+            for tt in tooltips:
+                for_id = tt.get('for')
+                if for_id in day_map:
+                    date_str = day_map[for_id]
+                    if date_str in parsed_dates:
+                        continue
+                    parsed_dates.add(date_str)
+                    
+                    text = tt.get_text().strip()
+                    if text.startswith('No contributions'):
+                        count = 0
+                    else:
+                        m = re.match(r'^([0-9,]+)\s+contribution', text)
+                        if m:
+                            count = int(m.group(1).replace(',', ''))
+                        else:
+                            count = 0
+                    days.append({"date": date_str, "count": count})
+                    
+            # Fallback to fill in any days missing tooltips as 0
+            all_days = []
+            for d_id, d_str in day_map.items():
+                matching = [x for x in days if x["date"] == d_str]
+                if matching:
+                    all_days.append(matching[0])
                 else:
-                    count = 0
-            days.append({"date": date_str, "count": count})
+                    all_days.append({"date": d_str, "count": 0})
+                    
+            all_days.sort(key=lambda x: x["date"])
+            res = [x for x in all_days if x["date"].startswith(str(year))]
+            if res:
+                return res
+        except Exception as e:
+            print(f"Scraping attempt {attempt}/{retries} for {year} failed: {e}", file=sys.stderr)
+            import time
+            time.sleep(2 * attempt)
             
-    # Fallback to fill in any days missing tooltips as 0
-    all_days = []
-    for d_id, d_str in day_map.items():
-        matching = [x for x in days if x["date"] == d_str]
-        if matching:
-            all_days.append(matching[0])
-        else:
-            all_days.append({"date": d_str, "count": 0})
-            
-    all_days.sort(key=lambda x: x["date"])
-    # Return only days belonging to the requested year
-    return [x for x in all_days if x["date"].startswith(str(year))]
+    return []
+
+def fetch_contributions_for_year(year):
+    """Fetch contribution days for a year, preferring GraphQL when token is present, else scraping."""
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        try:
+            days = fetch_contributions_graphql(year, token)
+            if days:
+                return days
+        except Exception as e:
+            print(f"GraphQL fetch failed for {year} ({e}), falling back to HTML scraping...", file=sys.stderr)
+
+    return fetch_contributions_html(year)
 
 def calc_daily_streaks(all_days):
     today = date.today()
     day_map = {d["date"]: d["count"] for d in all_days}
 
+    tomorrow_str = (today + timedelta(1)).strftime("%Y-%m-%d")
     today_str = today.strftime("%Y-%m-%d")
     yesterday_str = (today - timedelta(1)).strftime("%Y-%m-%d")
 
-    # Determine starting point for current streak
-    if day_map.get(today_str, 0) > 0:
+    # Determine starting point for current streak (accounts for timezone variations)
+    if day_map.get(tomorrow_str, 0) > 0:
+        start_check = today + timedelta(1)
+    elif day_map.get(today_str, 0) > 0:
         start_check = today
     elif day_map.get(yesterday_str, 0) > 0:
         start_check = today - timedelta(1)
@@ -481,6 +555,12 @@ def main():
 
     # De-duplicate and sort
     all_days = sorted({d["date"]: d for d in all_days}.values(), key=lambda x: x["date"])
+
+    # Safety guardrail: Never wipe valid streak data with 0 if fetch was rate-limited or failed
+    if total_contributions == 0 or len(all_days) == 0:
+        print("CRITICAL ERROR: Failed to fetch contribution data (0 contributions found).", file=sys.stderr)
+        print("Aborting update to prevent overwriting existing valid streak files with zeros.", file=sys.stderr)
+        sys.exit(1)
 
     # Compute daily streaks
     cur_streak, cur_s, cur_e, lng_streak, lng_s, lng_e = calc_daily_streaks(all_days)
