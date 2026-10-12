@@ -137,7 +137,7 @@ $$
 ### 🎮 CONTRIBUTION HEATMAP & ACTIVITY
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Isometric Contribution Graph" />
+  <img width="100%" src="profile/contribution-skyline.svg" alt="3D Isometric Contribution Skyline & Activity Matrix" />
 </p>
 
 <p align="center">
@@ -145,7 +145,7 @@ $$
 </p>
 
 > [!TIP]
-> This 3D architecture represents my daily commit velocity and cognitive load across the repository network.
+> This 3D isometric skyline & activity matrix represents my real-time commit velocity and contribution nodes across the repository network.
 
 ---
 

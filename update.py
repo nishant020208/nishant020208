@@ -2,6 +2,7 @@
 import os
 import sys
 import re
+import math
 import requests
 import urllib3
 from datetime import date, timedelta
@@ -534,6 +535,224 @@ def generate_top_langs_svg(language_bytes):
 {legend}  </g>
 </svg>"""
 
+def generate_contribution_skyline_svg(all_days, total_contributions, cur_streak, lng_streak, cur_w_streak, this_week_contribs):
+    """Generate 3D Isometric Contribution Skyline and Activity Matrix SVG."""
+    day_counts = {d["date"]: d["count"] for d in all_days}
+    today = date.today()
+    start_date = today - timedelta(days=52 * 7 - 1)
+    start_date -= timedelta(days=(start_date.weekday() + 1) % 7)
+
+    YAW_3D = math.pi / 4
+    ELEV_3D = (34 * math.pi) / 180
+    cs = math.cos(YAW_3D)
+    sn = math.sin(YAW_3D)
+    se = math.sin(ELEV_3D)
+    ce = math.cos(ELEV_3D)
+
+    scale = 16.2
+    ox = 185.0
+    oy = 175.0
+
+    def px(x, y, z):
+        px_val = x * cs - y * sn
+        return ox + px_val * scale
+
+    def py(x, y, z):
+        py_val = (x * sn + y * cs) * se - z * ce
+        return oy + py_val * scale
+
+    max_count = max(day_counts.values()) if day_counts else 100
+    bars = []
+    month_anchors = []
+    prev_month = None
+
+    for w in range(53):
+        for d in range(7):
+            dt = start_date + timedelta(days=w * 7 + d)
+            if dt > today:
+                continue
+            c = day_counts.get(dt.strftime("%Y-%m-%d"), 0)
+            depth = (w + 0.5) * sn + (d + 0.5) * cs
+            bars.append((depth, w, d, c, dt))
+
+            if d == 0:
+                m_str = dt.strftime("%b")
+                if m_str != prev_month:
+                    month_anchors.append((w, m_str))
+                    prev_month = m_str
+
+    bars.sort(key=lambda b: b[0])
+
+    w_bar = 0.82
+    off = (1.0 - w_bar) / 2.0
+    svg_elements = []
+
+    for depth, w, d, c, dt in bars:
+        x0 = w + off
+        y0 = d + off
+        x1 = x0 + w_bar
+        y1 = y0 + w_bar
+
+        if c > 0:
+            h = 0.35 + math.pow(c / max_count, 0.85) * 5.2
+        else:
+            h = 0.12
+
+        if c == 0:
+            top_color = "#161b22"
+            left_color = "#0e1319"
+            right_color = "#0a0e14"
+            edge_color = "#21262d"
+        elif c <= 5:
+            top_color = "#238636"
+            left_color = "#196c2e"
+            right_color = "#145524"
+            edge_color = "#2ea043"
+        elif c <= 20:
+            top_color = "#2ea043"
+            left_color = "#238636"
+            right_color = "#1b682b"
+            edge_color = "#3fb950"
+        elif c <= 60:
+            top_color = "#36bcf7"
+            left_color = "#2298cc"
+            right_color = "#17739e"
+            edge_color = "#79c0ff"
+        else:
+            top_color = "#fe428e"
+            left_color = "#d93275"
+            right_color = "#ab2159"
+            edge_color = "#ff79b8"
+
+        pt1 = f"{px(x0, y0, h):.1f},{py(x0, y0, h):.1f}"
+        pt2 = f"{px(x1, y0, h):.1f},{py(x1, y0, h):.1f}"
+        pt3 = f"{px(x1, y1, h):.1f},{py(x1, y1, h):.1f}"
+        pt4 = f"{px(x0, y1, h):.1f},{py(x0, y1, h):.1f}"
+
+        pl1 = f"{px(x0, y1, 0):.1f},{py(x0, y1, 0):.1f}"
+        pl2 = f"{px(x1, y1, 0):.1f},{py(x1, y1, 0):.1f}"
+        pl3 = pt3
+        pl4 = pt4
+
+        pr1 = f"{px(x1, y0, 0):.1f},{py(x1, y0, 0):.1f}"
+        pr2 = f"{px(x1, y1, 0):.1f},{py(x1, y1, 0):.1f}"
+        pr3 = pt3
+        pr4 = pt2
+
+        svg_elements.append(f'<polygon points="{pl1} {pl2} {pl3} {pl4}" fill="{left_color}" />')
+        svg_elements.append(f'<polygon points="{pr1} {pr2} {pr3} {pr4}" fill="{right_color}" />')
+        svg_elements.append(f'<polygon points="{pt1} {pt2} {pt3} {pt4}" fill="{top_color}" stroke="{edge_color}" stroke-width="0.4" />')
+
+    month_svgs = []
+    for mw, mname in month_anchors:
+        mx = px(mw + 0.5, 7.2, 0)
+        my = py(mw + 0.5, 7.2, 0) + 4
+        month_svgs.append(f'<text x="{mx:.1f}" y="{my:.1f}" font-family="\'Segoe UI\',Ubuntu,sans-serif" font-size="9.5" fill="#8b949e" text-anchor="middle">{mname}</text>')
+
+    skyline_bars_str = "\\n    ".join(svg_elements)
+    month_labels_str = "\\n    ".join(month_svgs)
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 540" width="950" height="540">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36BCF7" />
+      <stop offset="50%" stop-color="#fe428e" />
+      <stop offset="100%" stop-color="#f8d847" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36BCF7" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#fe428e" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f8d847" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="948" height="538" rx="18" fill="#0D1117" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <circle cx="475" cy="270" r="280" fill="#36bcf7" opacity="0.02" filter="url(#glow)" />
+  <circle cx="800" cy="380" r="220" fill="#fe428e" opacity="0.025" filter="url(#glow)" />
+
+  <g transform="translate(30, 36)">
+    <text x="0" y="0" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="18" font-weight="bold" fill="url(#headerGrad)" letter-spacing="0.5">
+      CONTRIBUTION SKYLINE &amp; ACTIVITY MATRIX
+    </text>
+    <text x="0" y="20" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="12" fill="#8b949e">
+      Isometric Trajectory Analysis · {total_contributions:,} Total Contributions · Active Neural Uplink
+    </text>
+    <g transform="translate(770, -14)">
+      <rect x="0" y="0" width="115" height="26" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+      <rect x="2" y="2" width="56" height="22" rx="4" fill="#21262d" />
+      <text x="30" y="16" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" font-weight="600" fill="#36BCF7">3D Skyline</text>
+      <text x="85" y="16" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" font-weight="500" fill="#8b949e">2D Grid</text>
+    </g>
+  </g>
+
+  <g transform="translate(30, 78)">
+    <rect x="0" y="0" width="205" height="46" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1" />
+    <text x="14" y="18" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">1 Year Total</text>
+    <text x="14" y="37" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" font-weight="bold" fill="#36BCF7">{total_contributions:,} <tspan font-size="11" font-weight="normal" fill="#8b949e">contribs</tspan></text>
+
+    <rect x="225" y="0" width="205" height="46" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1" />
+    <text x="239" y="18" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">Current Streak</text>
+    <text x="239" y="37" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" font-weight="bold" fill="#FF6EC7">{cur_streak} Days <tspan font-size="12">🔥</tspan></text>
+
+    <rect x="450" y="0" width="205" height="46" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1" />
+    <text x="464" y="18" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">Longest Streak</text>
+    <text x="464" y="37" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" font-weight="bold" fill="#39d353">{lng_streak} Days <tspan font-size="11" font-weight="normal" fill="#8b949e">(unbroken)</tspan></text>
+
+    <rect x="675" y="0" width="210" height="46" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1" />
+    <text x="689" y="18" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">Busiest Day</text>
+    <text x="689" y="37" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="16" font-weight="bold" fill="#f8d847">{max_count} <tspan font-size="11" font-weight="normal" fill="#8b949e">in 24 hrs</tspan></text>
+  </g>
+
+  <g id="skyline-bars">
+    {skyline_bars_str}
+  </g>
+
+  <g id="month-labels">
+    {month_labels_str}
+  </g>
+
+  <g transform="translate(30, 485)">
+    <g transform="translate(0, 8)">
+      <text x="0" y="9" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">Less</text>
+      <rect x="30" y="0" width="10" height="10" rx="2" fill="#161b22" stroke="#21262d" stroke-width="0.5" />
+      <rect x="44" y="0" width="10" height="10" rx="2" fill="#238636" />
+      <rect x="58" y="0" width="10" height="10" rx="2" fill="#2ea043" />
+      <rect x="72" y="0" width="10" height="10" rx="2" fill="#36bcf7" />
+      <rect x="86" y="0" width="10" height="10" rx="2" fill="#fe428e" />
+      <text x="102" y="9" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" fill="#8b949e">More</text>
+    </g>
+
+    <g transform="translate(420, 0)">
+      <text x="0" y="17" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="11" font-weight="600" fill="#8b949e">TOP NODES:</text>
+      <g transform="translate(80, 0)">
+        <rect x="0" y="0" width="130" height="24" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <circle cx="12" cy="12" r="7" fill="#fe428e" />
+        <text x="12" y="15" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#fff">M</text>
+        <text x="26" y="16" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#fff">META</text>
+        <text x="118" y="16" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="10" fill="#36BCF7">94% Acc</text>
+      </g>
+      <g transform="translate(220, 0)">
+        <rect x="0" y="0" width="130" height="24" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <circle cx="12" cy="12" r="7" fill="#36BCF7" />
+        <text x="12" y="15" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#fff">S</text>
+        <text x="26" y="16" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#fff">SVIT ERP</text>
+        <text x="118" y="16" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="10" fill="#39d353">10k+ N</text>
+      </g>
+      <g transform="translate(360, 0)">
+        <rect x="0" y="0" width="125" height="24" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <circle cx="12" cy="12" r="7" fill="#f8d847" />
+        <text x="12" y="15" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#141321">V</text>
+        <text x="26" y="16" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#fff">Vardant</text>
+        <text x="113" y="16" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="10" fill="#f8d847">DeFi</text>
+      </g>
+    </g>
+  </g>
+</svg>"""
+
 def main():
     print("Fetching GitHub REST API stats...")
     followers, repos, stars, repos_data = fetch_github_api_stats()
@@ -636,6 +855,14 @@ def main():
     with open("profile/top-langs.svg", "w", encoding="utf-8") as f:
         f.write(top_langs_svg)
     print("Saved profile/top-langs.svg")
+
+    # Generate Contribution Skyline & Activity Matrix SVG
+    skyline_svg = generate_contribution_skyline_svg(
+        all_days, total_contributions, cur_streak, lng_streak, cur_w_streak, this_week_contribs
+    )
+    with open("profile/contribution-skyline.svg", "w", encoding="utf-8") as f:
+        f.write(skyline_svg)
+    print("Saved profile/contribution-skyline.svg")
 
 if __name__ == "__main__":
     main()
