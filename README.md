@@ -73,7 +73,7 @@ $$
 | :--- | :--- | :--- |
 | **GDG HackFest 2026** | 🥇 **1st Rank** | **1st out of 100+ teams** in a multi-disciplinary engineering sprint. Focused on rapid prototyping and system reliability under extreme load. |
 | **Professional Milestone** | 🌟 **BETA** | Breakthrough in **Autonomous Agent logic**, achieving 94% task completion on complex adversarial web workflows. |
-| **Commit Velocity** | ⚡ **God Committer** | **5,600+ Verified Contributions** with unbroken consistency and rapid deployment frequency across repositories. |
+| **Commit Velocity** | ⚡ **God Committer** | **5,650+ Verified Contributions** with unbroken consistency and rapid deployment frequency across repositories. |
 | **Architectural Output** | 📦 **High Creator** | **23+ Public Repositories** architected from scratch with high modularity and clean engineering standards. |
 | **Language Spectrum** | 🌈 **Polyglot** | Production fluency spanning **8+ language ecosystems** (Python, JavaScript, TypeScript, C, HTML, CSS, Shell). |
 
@@ -137,7 +137,7 @@ $$
 ### 🎮 CONTRIBUTION HEATMAP & ACTIVITY
 
 <p align="center">
-  <img width="100%" src="profile/contribution-skyline.svg" alt="3D Isometric Contribution Skyline & Activity Matrix" />
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Isometric Contribution Graph" />
 </p>
 
 <p align="center">
@@ -145,7 +145,7 @@ $$
 </p>
 
 > [!TIP]
-> This 3D isometric skyline & activity matrix represents my real-time commit velocity and contribution nodes across the repository network.
+> This 3D architecture represents my daily commit velocity and cognitive load across the repository network.
 
 ---
 
